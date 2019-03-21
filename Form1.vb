@@ -9,14 +9,14 @@
                 For FadeCount = 10 To 90 Step 10
                     Me.Opacity = FadeCount / 100
                     Me.Refresh()
-                    Threading.Thread.Sleep(50)
+                    Threading.Thread.Sleep(30)
                 Next
             Case ("out")
                 Dim FadeCount As Integer
                 For FadeCount = 90 To 10 Step -10
                     Me.Opacity = FadeCount / 100
                     Me.Refresh()
-                    Threading.Thread.Sleep(50)
+                    Threading.Thread.Sleep(30)
                 Next
         End Select
         Me.Opacity = 99

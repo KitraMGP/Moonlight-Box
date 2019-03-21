@@ -32,7 +32,7 @@ Partial Class Form1
         '
         Me.Close.BackColor = System.Drawing.Color.Transparent
         Me.Close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Close.Location = New System.Drawing.Point(881, 12)
+        Me.Close.Location = New System.Drawing.Point(598, 12)
         Me.Close.Name = "Close"
         Me.Close.Size = New System.Drawing.Size(30, 33)
         Me.Close.TabIndex = 0
@@ -42,23 +42,24 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("黑体", 72.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 42.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(152, 202)
+        Me.Label1.Location = New System.Drawing.Point(226, 159)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(618, 97)
+        Me.Label1.Size = New System.Drawing.Size(249, 59)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Hello World!"
+        Me.Label1.Text = "月光宝盒"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(923, 500)
+        Me.ClientSize = New System.Drawing.Size(640, 360)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Close)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "Form1"
         Me.Text = "Hello World!"
