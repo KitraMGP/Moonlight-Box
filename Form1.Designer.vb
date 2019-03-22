@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class Start_Screen
     Inherits System.Windows.Forms.Form
 
     'Form 重写 Dispose，以清理组件列表。
@@ -22,53 +22,93 @@ Partial Class Form1
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.Close = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        CType(Me.Close, System.ComponentModel.ISupportInitialize).BeginInit()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Start_Screen))
+        Me.Start_Close = New System.Windows.Forms.PictureBox()
+        Me.Start_Name = New System.Windows.Forms.Label()
+        Me.Start_Icon = New System.Windows.Forms.PictureBox()
+        Me.Start_Progress = New System.Windows.Forms.ProgressBar()
+        Me.Start_Status = New System.Windows.Forms.Label()
+        CType(Me.Start_Close, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Start_Icon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Close
+        'Start_Close
         '
-        Me.Close.BackColor = System.Drawing.Color.Transparent
-        Me.Close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Close.Location = New System.Drawing.Point(598, 12)
-        Me.Close.Name = "Close"
-        Me.Close.Size = New System.Drawing.Size(30, 33)
-        Me.Close.TabIndex = 0
-        Me.Close.TabStop = False
+        Me.Start_Close.BackColor = System.Drawing.Color.Transparent
+        Me.Start_Close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Start_Close.Location = New System.Drawing.Point(598, 12)
+        Me.Start_Close.Name = "Start_Close"
+        Me.Start_Close.Size = New System.Drawing.Size(30, 33)
+        Me.Start_Close.TabIndex = 0
+        Me.Start_Close.TabStop = False
         '
-        'Label1
+        'Start_Name
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 42.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(226, 159)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(249, 59)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "月光宝盒"
+        Me.Start_Name.AutoSize = True
+        Me.Start_Name.BackColor = System.Drawing.Color.Transparent
+        Me.Start_Name.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 72.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Start_Name.ForeColor = System.Drawing.Color.White
+        Me.Start_Name.Location = New System.Drawing.Point(174, 123)
+        Me.Start_Name.Name = "Start_Name"
+        Me.Start_Name.Size = New System.Drawing.Size(427, 102)
+        Me.Start_Name.TabIndex = 1
+        Me.Start_Name.Text = "月光宝盒"
         '
-        'Form1
+        'Start_Icon
+        '
+        Me.Start_Icon.BackColor = System.Drawing.Color.Transparent
+        Me.Start_Icon.Image = CType(resources.GetObject("Start_Icon.Image"), System.Drawing.Image)
+        Me.Start_Icon.Location = New System.Drawing.Point(36, 114)
+        Me.Start_Icon.Name = "Start_Icon"
+        Me.Start_Icon.Size = New System.Drawing.Size(132, 111)
+        Me.Start_Icon.TabIndex = 2
+        Me.Start_Icon.TabStop = False
+        '
+        'Start_Progress
+        '
+        Me.Start_Progress.Location = New System.Drawing.Point(0, 341)
+        Me.Start_Progress.Name = "Start_Progress"
+        Me.Start_Progress.Size = New System.Drawing.Size(640, 20)
+        Me.Start_Progress.TabIndex = 3
+        '
+        'Start_Status
+        '
+        Me.Start_Status.AutoSize = True
+        Me.Start_Status.BackColor = System.Drawing.Color.Transparent
+        Me.Start_Status.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.0!)
+        Me.Start_Status.ForeColor = System.Drawing.Color.White
+        Me.Start_Status.Location = New System.Drawing.Point(12, 310)
+        Me.Start_Status.Name = "Start_Status"
+        Me.Start_Status.Size = New System.Drawing.Size(0, 28)
+        Me.Start_Status.TabIndex = 4
+        '
+        'Start_Screen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(640, 360)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Close)
+        Me.Controls.Add(Me.Start_Status)
+        Me.Controls.Add(Me.Start_Progress)
+        Me.Controls.Add(Me.Start_Icon)
+        Me.Controls.Add(Me.Start_Name)
+        Me.Controls.Add(Me.Start_Close)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
-        Me.Name = "Form1"
+        Me.Name = "Start_Screen"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Hello World!"
-        CType(Me.Close, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Start_Close, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Start_Icon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents Close As PictureBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents Start_Close As PictureBox
+    Friend WithEvents Start_Name As Label
+    Friend WithEvents Start_Icon As PictureBox
+    Friend WithEvents Start_Progress As ProgressBar
+    Friend WithEvents Start_Status As Label
 End Class
