@@ -46,11 +46,11 @@ Partial Class Start_Screen
         '
         Me.Start_Name.AutoSize = True
         Me.Start_Name.BackColor = System.Drawing.Color.Transparent
-        Me.Start_Name.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 72.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Start_Name.Font = New System.Drawing.Font("宋体", 72.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Start_Name.ForeColor = System.Drawing.Color.White
         Me.Start_Name.Location = New System.Drawing.Point(174, 123)
         Me.Start_Name.Name = "Start_Name"
-        Me.Start_Name.Size = New System.Drawing.Size(427, 102)
+        Me.Start_Name.Size = New System.Drawing.Size(426, 97)
         Me.Start_Name.TabIndex = 1
         Me.Start_Name.Text = "月光宝盒"
         '
@@ -79,8 +79,9 @@ Partial Class Start_Screen
         Me.Start_Status.ForeColor = System.Drawing.Color.White
         Me.Start_Status.Location = New System.Drawing.Point(12, 310)
         Me.Start_Status.Name = "Start_Status"
-        Me.Start_Status.Size = New System.Drawing.Size(0, 28)
+        Me.Start_Status.Size = New System.Drawing.Size(171, 28)
         Me.Start_Status.TabIndex = 4
+        Me.Start_Status.Text = "正在初始化..."
         '
         'Start_Screen
         '

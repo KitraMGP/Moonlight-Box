@@ -81,8 +81,8 @@ Public Class Start_Screen
         'Dim P As New PointF(10, 10) '字符位置
 
         '设置字体
-        Start_Name.Font = New Font(FName, 72, FontStyle.Regular)
-        Start_Status.Font = New Font(FName, 20, FontStyle.Regular)
+        Start_Name.Font = New Font(FFS(0), 72, FontStyle.Regular)
+        Start_Status.Font = New Font(FFS(0), 20, FontStyle.Regular)
 
     End Sub
 
@@ -123,7 +123,6 @@ Public Class Start_Screen
         FormFade("in") '窗体打开时淡入
         Start_Close.Image = My.Resources.close_0
         Start_Progress.Value = 20
-        Start_Status.Text = "正在初始化..."
         delay(1000)
         Start_Progress.Value = 60
         Start_Status.Text = "载入中..."
