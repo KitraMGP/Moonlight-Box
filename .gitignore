@@ -1,8 +1,6 @@
 bin/
 obj/
 other/
-.vs/WindowsApp1/v15/Server/sqlite3/db.lock
-.vs/WindowsApp1/v15/Server/sqlite3/storage.ide
-.vs/WindowsApp1/v15/Server/sqlite3/storage.ide-shm
-.vs/WindowsApp1/v15/Server/sqlite3/storage.ide-wal
-.vs/WindowsApp1/v15/.suo
+.vs/
+*.sln
+MoonLight_Box.vbproj.user
