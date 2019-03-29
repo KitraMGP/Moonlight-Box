@@ -76,13 +76,12 @@ Public Class Start_Screen
 
         Dim FName As String = FFS(0).Name
 
-        'Dim F As New Font(FFS(0), 72) '创建字符实例
-        'Dim B As New SolidBrush(Color.Blue) '字体颜色
-        'Dim P As New PointF(10, 10) '字符位置
+        'New Font(FFS(0), 72) '创建字符
+        'New SolidBrush(Color.Blue) '字体颜色
 
         '设置字体
-        Start_Name.Font = New Font(FFS(0), 72, FontStyle.Regular)
-        Start_Status.Font = New Font(FFS(0), 20, FontStyle.Regular)
+        Start_Name.Font = New Font(FName, 72, FontStyle.Regular)
+        Start_Status.Font = New Font(FName, 20, FontStyle.Regular)
 
     End Sub
 
