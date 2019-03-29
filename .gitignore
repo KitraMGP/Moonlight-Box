@@ -1,6 +1,6 @@
 bin/
 obj/
-other/
+other_/
 .vs/
 *.sln
 MoonLight_Box.vbproj.user

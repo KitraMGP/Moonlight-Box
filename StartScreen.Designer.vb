@@ -46,18 +46,19 @@ Partial Class Start_Screen
         '
         Me.Start_Name.AutoSize = True
         Me.Start_Name.BackColor = System.Drawing.Color.Transparent
-        Me.Start_Name.Font = New System.Drawing.Font("宋体", 72.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Start_Name.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Start_Name.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 72.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Start_Name.ForeColor = System.Drawing.Color.White
         Me.Start_Name.Location = New System.Drawing.Point(174, 123)
         Me.Start_Name.Name = "Start_Name"
-        Me.Start_Name.Size = New System.Drawing.Size(426, 97)
+        Me.Start_Name.Size = New System.Drawing.Size(427, 102)
         Me.Start_Name.TabIndex = 1
         Me.Start_Name.Text = "月光宝盒"
         '
         'Start_Icon
         '
         Me.Start_Icon.BackColor = System.Drawing.Color.Transparent
-        Me.Start_Icon.Image = CType(resources.GetObject("Start_Icon.Image"), System.Drawing.Image)
+        Me.Start_Icon.Image = Global.Moonlight_Box.My.Resources.Resources.icon
         Me.Start_Icon.Location = New System.Drawing.Point(36, 114)
         Me.Start_Icon.Name = "Start_Icon"
         Me.Start_Icon.Size = New System.Drawing.Size(132, 111)
@@ -85,21 +86,21 @@ Partial Class Start_Screen
         '
         'Start_Screen
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(640, 360)
         Me.Controls.Add(Me.Start_Status)
         Me.Controls.Add(Me.Start_Progress)
         Me.Controls.Add(Me.Start_Icon)
         Me.Controls.Add(Me.Start_Name)
         Me.Controls.Add(Me.Start_Close)
+        Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "Start_Screen"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Hello World!"
         CType(Me.Start_Close, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Start_Icon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
