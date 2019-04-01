@@ -23,24 +23,12 @@ Partial Class Start_Screen
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Start_Screen))
-        Me.Start_Close = New System.Windows.Forms.PictureBox()
         Me.Start_Name = New System.Windows.Forms.Label()
         Me.Start_Icon = New System.Windows.Forms.PictureBox()
         Me.Start_Progress = New System.Windows.Forms.ProgressBar()
         Me.Start_Status = New System.Windows.Forms.Label()
-        CType(Me.Start_Close, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Start_Icon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Start_Close
-        '
-        Me.Start_Close.BackColor = System.Drawing.Color.Transparent
-        Me.Start_Close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Start_Close.Location = New System.Drawing.Point(598, 12)
-        Me.Start_Close.Name = "Start_Close"
-        Me.Start_Close.Size = New System.Drawing.Size(30, 33)
-        Me.Start_Close.TabIndex = 0
-        Me.Start_Close.TabStop = False
         '
         'Start_Name
         '
@@ -94,21 +82,17 @@ Partial Class Start_Screen
         Me.Controls.Add(Me.Start_Progress)
         Me.Controls.Add(Me.Start_Icon)
         Me.Controls.Add(Me.Start_Name)
-        Me.Controls.Add(Me.Start_Close)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "Start_Screen"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        CType(Me.Start_Close, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Start_Icon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Start_Close As PictureBox
     Friend WithEvents Start_Name As Label
     Friend WithEvents Start_Icon As PictureBox
     Friend WithEvents Start_Progress As ProgressBar
