@@ -33,32 +33,27 @@
         End If
     End Sub
 
-
-
-    Private Sub MainScreen_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Start_Close.Image = My.Resources.close_0
+    '显示贴图
+    Private Sub MainScreen_Load(sender As Object, e As EventArgs) Handles Me.Load
+        Main_Close.Image = My.Resources.close_0
     End Sub
-
-    '关闭按钮按钮选中时
-    Private Sub Close_MouseMove(sender As Object, e As MouseEventArgs)
-        Start_Close.Image = My.Resources.close_1
+    '鼠标移动到关闭按钮时
+    Private Sub Main_Close_MouseMove(sender As Object, e As MouseEventArgs) Handles Main_Close.MouseMove
+        Main_Close.Image = My.Resources.close_1
     End Sub
-
-    '关闭按钮按下时
-    Private Sub Close_MouseDown(sender As Object, e As MouseEventArgs)
-        Start_Close.Image = My.Resources.close_2
+    '关闭
+    Private Sub Main_Close_MouseDown(sender As Object, e As MouseEventArgs) Handles Main_Close.MouseDown
+        Main_Close.Image = My.Resources.close_2
         Close()
     End Sub
-
-    '关闭按钮移开时
-    Private Sub Close_MouseLeave(sender As Object, e As EventArgs)
-        Start_Close.Image = My.Resources.close_0
+    '恢复贴图
+    Private Sub Main_Close_MouseLeave(sender As Object, e As EventArgs) Handles Main_Close.MouseLeave
+        Main_Close.Image = My.Resources.close_0
     End Sub
 
-    '关闭按钮单击时
-    Private Sub Close_Click(sender As Object, e As EventArgs)
-        Close()
-    End Sub
+
+
+
 
     '关闭窗口时
     'Private Sub Start_Screen_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing

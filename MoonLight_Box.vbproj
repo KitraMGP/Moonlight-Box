@@ -209,5 +209,8 @@
   <ItemGroup>
     <None Include="resources\startbg.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\main.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
