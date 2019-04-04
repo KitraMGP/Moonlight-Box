@@ -123,9 +123,39 @@ Namespace My.Resources
         '''<summary>
         '''  查找 System.Drawing.Bitmap 类型的本地化资源。
         '''</summary>
+        Friend ReadOnly Property pen() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("pen", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找 System.Drawing.Bitmap 类型的本地化资源。
+        '''</summary>
         Friend ReadOnly Property startbg() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("startbg", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找 System.Drawing.Bitmap 类型的本地化资源。
+        '''</summary>
+        Friend ReadOnly Property video() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("video", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找 System.Drawing.Bitmap 类型的本地化资源。
+        '''</summary>
+        Friend ReadOnly Property winicon() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("winicon", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

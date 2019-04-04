@@ -161,7 +161,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-    <None Include="other\锐字锐线俏皮简1.0.TTF" />
     <None Include="resources\锐字锐线俏皮简1.0.TTF" />
   </ItemGroup>
   <ItemGroup>
@@ -195,12 +194,6 @@
     <None Include="resources\close_2.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="other\startbg.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="other\icon.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="resources\icon.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -211,6 +204,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="resources\main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\winicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\video.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\pen.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

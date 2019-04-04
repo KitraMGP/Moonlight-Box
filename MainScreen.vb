@@ -54,9 +54,24 @@
 
 
 
+    '-----------------------------主界面-----------------------------
 
-    '关闭窗口时
-    'Private Sub Start_Screen_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
-    '    FormFade("out")
-    'End Sub
+    '分组1
+    Private Sub Icon_Win_Click(sender As Object, e As EventArgs) Handles Icon_Win.Click
+        Group_MMedia.Hide()
+        Group_Others.Hide()
+        Group_Win.Show()
+    End Sub
+
+    Private Sub Icon_MMedia_Click(sender As Object, e As EventArgs) Handles Icon_MMedia.Click
+        Group_Win.Hide()
+        Group_Others.Hide()
+        Group_MMedia.Show()
+    End Sub
+
+    Private Sub Icon_Others_Click(sender As Object, e As EventArgs) Handles Icon_Others.Click
+        Group_Win.Hide()
+        Group_MMedia.Hide()
+        Group_Others.Show()
+    End Sub
 End Class
