@@ -121,11 +121,11 @@ Partial Class MainScreen
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(72, 80)
+        Me.Label1.Location = New System.Drawing.Point(6, 17)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(41, 12)
+        Me.Label1.Size = New System.Drawing.Size(47, 12)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Label1"
+        Me.Label1.Text = "选项卡1"
         '
         'Group_MMedia
         '
@@ -152,20 +152,20 @@ Partial Class MainScreen
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(120, 80)
+        Me.Label3.Location = New System.Drawing.Point(6, 17)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(41, 12)
+        Me.Label3.Size = New System.Drawing.Size(47, 12)
         Me.Label3.TabIndex = 0
-        Me.Label3.Text = "Label3"
+        Me.Label3.Text = "选项卡3"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(74, 39)
+        Me.Label2.Location = New System.Drawing.Point(6, 17)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(41, 12)
+        Me.Label2.Size = New System.Drawing.Size(47, 12)
         Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Label2"
+        Me.Label2.Text = "选项卡2"
         '
         'MainScreen
         '
