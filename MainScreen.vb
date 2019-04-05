@@ -56,24 +56,75 @@
 
     '-----------------------------主界面-----------------------------
 
-    '分组1
-    Private Sub Icon_Win_Click(sender As Object, e As EventArgs) Handles Icon_Win.Click
-        Group_MMedia.Hide()
-        Group_Others.Hide()
-        Group_Win.Show()
+    '---------------------------选项卡按钮---------------------------
+
+    '选项卡按钮功能
+    Private Sub Icon_Win_MouseDown(sender As Object, e As EventArgs) Handles Icon_Win.MouseDown
+        Icon_Win.BackgroundImage = My.Resources.winicon_2
+        Panel_MMedia.Hide()
+        Panel_Others.Hide()
+        Panel_Settings.Hide()
+        Panel_Win.Show()
     End Sub
 
-    Private Sub Icon_MMedia_Click(sender As Object, e As EventArgs) Handles Icon_MMedia.Click
-        Group_Win.Hide()
-        Group_Others.Hide()
-        Group_MMedia.Show()
+    Private Sub Icon_MMedia_MouseDown(sender As Object, e As EventArgs) Handles Icon_MMedia.MouseDown
+        Icon_MMedia.BackgroundImage = My.Resources.video_2
+        Panel_Win.Hide()
+        Panel_Others.Hide()
+        Panel_Settings.Hide()
+        Panel_MMedia.Show()
     End Sub
 
-    Private Sub Icon_Others_Click(sender As Object, e As EventArgs) Handles Icon_Others.Click
-        Group_Win.Hide()
-        Group_MMedia.Hide()
-        Group_Others.Show()
+    Private Sub Icon_Others_MouseDown(sender As Object, e As EventArgs) Handles Icon_Others.MouseDown
+        Icon_Others.BackgroundImage = My.Resources.pen_2
+        Panel_Win.Hide()
+        Panel_MMedia.Hide()
+        Panel_Settings.Hide()
+        Panel_Others.Show()
+    End Sub
+
+    Private Sub Icon_Settings_MouseDown(sender As Object, e As EventArgs) Handles Icon_Settings.MouseDown
+        Icon_Settings.BackgroundImage = My.Resources.settings_2
+        Panel_Win.Hide()
+        Panel_MMedia.Hide()
+        Panel_Others.Hide()
+        Panel_Settings.Show()
     End Sub
 
 
+
+    '选项卡按钮选中
+    Private Sub Icon_Win_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_Win.MouseMove
+        Icon_Win.BackgroundImage = My.Resources.winicon_1
+    End Sub
+
+    Private Sub Icon_MMedia_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_MMedia.MouseMove
+        Icon_MMedia.BackgroundImage = My.Resources.video_1
+    End Sub
+
+    Private Sub Icon_Others_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_Others.MouseMove
+        Icon_Others.BackgroundImage = My.Resources.pen_1
+    End Sub
+
+    Private Sub Icon_Settings_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_Settings.MouseMove
+        Icon_Settings.BackgroundImage = My.Resources.settings_1
+    End Sub
+
+
+    '鼠标离开按钮
+    Private Sub Icon_Win_MouseLeave(sender As Object, e As EventArgs) Handles Icon_Win.MouseLeave
+        Icon_Win.BackgroundImage = My.Resources.winicon_0
+    End Sub
+
+    Private Sub Icon_MMedia_MouseLeave(sender As Object, e As EventArgs) Handles Icon_MMedia.MouseLeave
+        Icon_MMedia.BackgroundImage = My.Resources.video_0
+    End Sub
+
+    Private Sub Icon_Others_MouseLeave(sender As Object, e As EventArgs) Handles Icon_Others.MouseLeave
+        Icon_Others.BackgroundImage = My.Resources.pen_0
+    End Sub
+
+    Private Sub Icon_Settings_MouseLeave(sender As Object, e As EventArgs) Handles Icon_Settings.MouseLeave
+        Icon_Settings.BackgroundImage = My.Resources.settings_0
+    End Sub
 End Class

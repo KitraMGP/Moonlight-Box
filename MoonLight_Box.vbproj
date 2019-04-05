@@ -214,5 +214,56 @@
   <ItemGroup>
     <None Include="resources\pen.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\winicon_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\video_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\settings_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\pen_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\video_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\winicon_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\pen_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\settings_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\main_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\pen_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\settings_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\video_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\winicon_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="other_\临时资源文件\winicon_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="other_\临时资源文件\winicon_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="other_\临时资源文件\winicon_2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

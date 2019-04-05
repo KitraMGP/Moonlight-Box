@@ -24,26 +24,29 @@ Partial Class MainScreen
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainScreen))
         Me.Main_Close = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Icon_Win = New System.Windows.Forms.PictureBox()
         Me.Icon_MMedia = New System.Windows.Forms.PictureBox()
         Me.Icon_Others = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.Group_Win = New System.Windows.Forms.GroupBox()
+        Me.Icon_Settings = New System.Windows.Forms.PictureBox()
+        Me.ButtonsPanel = New System.Windows.Forms.Panel()
+        Me.Panel_Win = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Group_MMedia = New System.Windows.Forms.GroupBox()
-        Me.Group_Others = New System.Windows.Forms.GroupBox()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Panel_MMedia = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Panel_Others = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Panel_Settings = New System.Windows.Forms.Panel()
+        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.Main_Close, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_Win, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_MMedia, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_Others, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Group_Win.SuspendLayout()
-        Me.Group_MMedia.SuspendLayout()
-        Me.Group_Others.SuspendLayout()
+        CType(Me.Icon_Settings, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ButtonsPanel.SuspendLayout()
+        Me.Panel_Win.SuspendLayout()
+        Me.Panel_MMedia.SuspendLayout()
+        Me.Panel_Others.SuspendLayout()
+        Me.Panel_Settings.SuspendLayout()
         Me.SuspendLayout()
         '
         'Main_Close
@@ -56,22 +59,12 @@ Partial Class MainScreen
         Me.Main_Close.TabIndex = 1
         Me.Main_Close.TabStop = False
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 20)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(120, 461)
-        Me.PictureBox1.TabIndex = 2
-        Me.PictureBox1.TabStop = False
-        '
         'Icon_Win
         '
         Me.Icon_Win.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_Win.BackgroundImage = Global.Moonlight_Box.My.Resources.Resources.winicon
+        Me.Icon_Win.BackgroundImage = Global.Moonlight_Box.My.Resources.Resources.winicon_0
         Me.Icon_Win.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Icon_Win.Location = New System.Drawing.Point(23, 35)
+        Me.Icon_Win.Location = New System.Drawing.Point(16, 17)
         Me.Icon_Win.Name = "Icon_Win"
         Me.Icon_Win.Size = New System.Drawing.Size(100, 100)
         Me.Icon_Win.TabIndex = 3
@@ -80,9 +73,9 @@ Partial Class MainScreen
         'Icon_MMedia
         '
         Me.Icon_MMedia.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_MMedia.BackgroundImage = Global.Moonlight_Box.My.Resources.Resources.video
+        Me.Icon_MMedia.BackgroundImage = Global.Moonlight_Box.My.Resources.Resources.video_0
         Me.Icon_MMedia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Icon_MMedia.Location = New System.Drawing.Point(23, 147)
+        Me.Icon_MMedia.Location = New System.Drawing.Point(16, 123)
         Me.Icon_MMedia.Name = "Icon_MMedia"
         Me.Icon_MMedia.Size = New System.Drawing.Size(100, 100)
         Me.Icon_MMedia.TabIndex = 4
@@ -91,81 +84,112 @@ Partial Class MainScreen
         'Icon_Others
         '
         Me.Icon_Others.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_Others.BackgroundImage = Global.Moonlight_Box.My.Resources.Resources.pen
+        Me.Icon_Others.BackgroundImage = Global.Moonlight_Box.My.Resources.Resources.pen_0
         Me.Icon_Others.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Icon_Others.Location = New System.Drawing.Point(23, 259)
+        Me.Icon_Others.Location = New System.Drawing.Point(16, 229)
         Me.Icon_Others.Name = "Icon_Others"
         Me.Icon_Others.Size = New System.Drawing.Size(100, 100)
         Me.Icon_Others.TabIndex = 5
         Me.Icon_Others.TabStop = False
         '
-        'PictureBox5
+        'Icon_Settings
         '
-        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox5.Location = New System.Drawing.Point(23, 371)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(100, 100)
-        Me.PictureBox5.TabIndex = 6
-        Me.PictureBox5.TabStop = False
+        Me.Icon_Settings.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_Settings.BackgroundImage = Global.Moonlight_Box.My.Resources.Resources.settings_0
+        Me.Icon_Settings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Icon_Settings.Location = New System.Drawing.Point(16, 335)
+        Me.Icon_Settings.Name = "Icon_Settings"
+        Me.Icon_Settings.Size = New System.Drawing.Size(100, 100)
+        Me.Icon_Settings.TabIndex = 6
+        Me.Icon_Settings.TabStop = False
         '
-        'Group_Win
+        'ButtonsPanel
         '
-        Me.Group_Win.BackColor = System.Drawing.Color.Transparent
-        Me.Group_Win.Controls.Add(Me.Label1)
-        Me.Group_Win.Location = New System.Drawing.Point(150, 20)
-        Me.Group_Win.Name = "Group_Win"
-        Me.Group_Win.Size = New System.Drawing.Size(746, 461)
-        Me.Group_Win.TabIndex = 7
-        Me.Group_Win.TabStop = False
+        Me.ButtonsPanel.BackColor = System.Drawing.Color.Transparent
+        Me.ButtonsPanel.BackgroundImage = Global.Moonlight_Box.My.Resources.Resources.main_left
+        Me.ButtonsPanel.Controls.Add(Me.Icon_Win)
+        Me.ButtonsPanel.Controls.Add(Me.Icon_Settings)
+        Me.ButtonsPanel.Controls.Add(Me.Icon_Others)
+        Me.ButtonsPanel.Controls.Add(Me.Icon_MMedia)
+        Me.ButtonsPanel.Location = New System.Drawing.Point(12, 20)
+        Me.ButtonsPanel.Name = "ButtonsPanel"
+        Me.ButtonsPanel.Size = New System.Drawing.Size(132, 461)
+        Me.ButtonsPanel.TabIndex = 9
+        '
+        'Panel_Win
+        '
+        Me.Panel_Win.BackColor = System.Drawing.Color.Transparent
+        Me.Panel_Win.Controls.Add(Me.Label1)
+        Me.Panel_Win.Location = New System.Drawing.Point(167, 20)
+        Me.Panel_Win.Name = "Panel_Win"
+        Me.Panel_Win.Size = New System.Drawing.Size(720, 461)
+        Me.Panel_Win.TabIndex = 10
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(6, 17)
+        Me.Label1.Location = New System.Drawing.Point(3, 13)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(47, 12)
+        Me.Label1.Size = New System.Drawing.Size(11, 12)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "选项卡1"
+        Me.Label1.Text = "1"
         '
-        'Group_MMedia
+        'Panel_MMedia
         '
-        Me.Group_MMedia.BackColor = System.Drawing.Color.Transparent
-        Me.Group_MMedia.Controls.Add(Me.Label2)
-        Me.Group_MMedia.Location = New System.Drawing.Point(150, 20)
-        Me.Group_MMedia.Name = "Group_MMedia"
-        Me.Group_MMedia.Size = New System.Drawing.Size(746, 461)
-        Me.Group_MMedia.TabIndex = 1
-        Me.Group_MMedia.TabStop = False
-        Me.Group_MMedia.Visible = False
-        '
-        'Group_Others
-        '
-        Me.Group_Others.BackColor = System.Drawing.Color.Transparent
-        Me.Group_Others.Controls.Add(Me.Label3)
-        Me.Group_Others.Location = New System.Drawing.Point(150, 20)
-        Me.Group_Others.Name = "Group_Others"
-        Me.Group_Others.Size = New System.Drawing.Size(746, 461)
-        Me.Group_Others.TabIndex = 1
-        Me.Group_Others.TabStop = False
-        Me.Group_Others.Visible = False
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(6, 17)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(47, 12)
-        Me.Label3.TabIndex = 0
-        Me.Label3.Text = "选项卡3"
+        Me.Panel_MMedia.BackColor = System.Drawing.Color.Transparent
+        Me.Panel_MMedia.Controls.Add(Me.Label2)
+        Me.Panel_MMedia.Location = New System.Drawing.Point(167, 20)
+        Me.Panel_MMedia.Name = "Panel_MMedia"
+        Me.Panel_MMedia.Size = New System.Drawing.Size(720, 461)
+        Me.Panel_MMedia.TabIndex = 11
+        Me.Panel_MMedia.Visible = False
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(6, 17)
+        Me.Label2.Location = New System.Drawing.Point(5, 13)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(47, 12)
+        Me.Label2.Size = New System.Drawing.Size(11, 12)
         Me.Label2.TabIndex = 0
-        Me.Label2.Text = "选项卡2"
+        Me.Label2.Text = "2"
+        '
+        'Panel_Others
+        '
+        Me.Panel_Others.BackColor = System.Drawing.Color.Transparent
+        Me.Panel_Others.Controls.Add(Me.Label3)
+        Me.Panel_Others.Location = New System.Drawing.Point(167, 20)
+        Me.Panel_Others.Name = "Panel_Others"
+        Me.Panel_Others.Size = New System.Drawing.Size(720, 461)
+        Me.Panel_Others.TabIndex = 12
+        Me.Panel_Others.Visible = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(5, 17)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(11, 12)
+        Me.Label3.TabIndex = 0
+        Me.Label3.Text = "3"
+        '
+        'Panel_Settings
+        '
+        Me.Panel_Settings.BackColor = System.Drawing.Color.Transparent
+        Me.Panel_Settings.Controls.Add(Me.Label4)
+        Me.Panel_Settings.Location = New System.Drawing.Point(167, 20)
+        Me.Panel_Settings.Name = "Panel_Settings"
+        Me.Panel_Settings.Size = New System.Drawing.Size(720, 461)
+        Me.Panel_Settings.TabIndex = 13
+        Me.Panel_Settings.Visible = False
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(5, 13)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(11, 12)
+        Me.Label4.TabIndex = 0
+        Me.Label4.Text = "4"
         '
         'MainScreen
         '
@@ -173,15 +197,12 @@ Partial Class MainScreen
         Me.BackgroundImage = Global.Moonlight_Box.My.Resources.Resources.main
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(944, 501)
-        Me.Controls.Add(Me.Group_Others)
-        Me.Controls.Add(Me.Group_MMedia)
-        Me.Controls.Add(Me.Group_Win)
-        Me.Controls.Add(Me.PictureBox5)
-        Me.Controls.Add(Me.Icon_Others)
-        Me.Controls.Add(Me.Icon_MMedia)
-        Me.Controls.Add(Me.Icon_Win)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Panel_Settings)
+        Me.Controls.Add(Me.Panel_Others)
+        Me.Controls.Add(Me.Panel_MMedia)
+        Me.Controls.Add(Me.ButtonsPanel)
         Me.Controls.Add(Me.Main_Close)
+        Me.Controls.Add(Me.Panel_Win)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -190,31 +211,35 @@ Partial Class MainScreen
         Me.Name = "MainScreen"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         CType(Me.Main_Close, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_Win, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_MMedia, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_Others, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Group_Win.ResumeLayout(False)
-        Me.Group_Win.PerformLayout()
-        Me.Group_MMedia.ResumeLayout(False)
-        Me.Group_MMedia.PerformLayout()
-        Me.Group_Others.ResumeLayout(False)
-        Me.Group_Others.PerformLayout()
+        CType(Me.Icon_Settings, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ButtonsPanel.ResumeLayout(False)
+        Me.Panel_Win.ResumeLayout(False)
+        Me.Panel_Win.PerformLayout()
+        Me.Panel_MMedia.ResumeLayout(False)
+        Me.Panel_MMedia.PerformLayout()
+        Me.Panel_Others.ResumeLayout(False)
+        Me.Panel_Others.PerformLayout()
+        Me.Panel_Settings.ResumeLayout(False)
+        Me.Panel_Settings.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents Main_Close As PictureBox
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Icon_Win As PictureBox
     Friend WithEvents Icon_MMedia As PictureBox
     Friend WithEvents Icon_Others As PictureBox
-    Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents Group_Win As GroupBox
-    Friend WithEvents Group_MMedia As GroupBox
-    Friend WithEvents Label2 As Label
+    Friend WithEvents Icon_Settings As PictureBox
+    Friend WithEvents ButtonsPanel As Panel
+    Friend WithEvents Panel_Win As Panel
     Friend WithEvents Label1 As Label
-    Friend WithEvents Group_Others As GroupBox
+    Friend WithEvents Panel_MMedia As Panel
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Panel_Others As Panel
+    Friend WithEvents Panel_Settings As Panel
+    Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
 End Class
