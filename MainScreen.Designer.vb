@@ -31,37 +31,37 @@ Partial Class MainScreen
         Me.ButtonsPanel = New System.Windows.Forms.Panel()
         Me.Panel_Win = New System.Windows.Forms.Panel()
         Me.Panel_Win_Main = New System.Windows.Forms.Panel()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Win_Cleaner = New System.Windows.Forms.Button()
+        Me.Win_Securily = New System.Windows.Forms.Button()
+        Me.Win_Programs = New System.Windows.Forms.Button()
+        Me.Win_TroubleShooting = New System.Windows.Forms.Button()
+        Me.Win_Regedit = New System.Windows.Forms.Button()
+        Me.Win_IPConfig = New System.Windows.Forms.Button()
+        Me.Win_BootOptions = New System.Windows.Forms.Button()
+        Me.Win_Events = New System.Windows.Forms.Button()
+        Me.Win_OSInfo = New System.Windows.Forms.Button()
+        Me.Win_Tasks = New System.Windows.Forms.Button()
+        Me.Win_OpenCmd = New System.Windows.Forms.Button()
+        Me.Win_Devices = New System.Windows.Forms.Button()
+        Me.Win_Services = New System.Windows.Forms.Button()
+        Me.Win_WinVer = New System.Windows.Forms.Button()
+        Me.Win_GPEDIT = New System.Windows.Forms.Button()
+        Me.Win_OpenTempFolder = New System.Windows.Forms.Button()
         Me.Win_OpenControl = New System.Windows.Forms.Button()
         Me.Panel_Win_Icon = New System.Windows.Forms.PictureBox()
         Me.Panel_Win_Desc = New System.Windows.Forms.Label()
         Me.Panel_MMedia = New System.Windows.Forms.Panel()
+        Me.Vid_FFMpeg = New System.Windows.Forms.Button()
+        Me.Vid_Merge = New System.Windows.Forms.Button()
+        Me.Vid_Cut = New System.Windows.Forms.Button()
+        Me.Vid_Conv = New System.Windows.Forms.Button()
+        Me.Panel2_Icon = New System.Windows.Forms.PictureBox()
         Me.Panel2_Desc = New System.Windows.Forms.Label()
         Me.Panel_Others = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel_Settings = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Win_OpenTempFolder = New System.Windows.Forms.Button()
-        Me.Win_GPEDIT = New System.Windows.Forms.Button()
-        Me.Win_WinVer = New System.Windows.Forms.Button()
-        Me.Win_Services = New System.Windows.Forms.Button()
-        Me.Win_Devices = New System.Windows.Forms.Button()
-        Me.Win_OpenCmd = New System.Windows.Forms.Button()
-        Me.Win_Tasks = New System.Windows.Forms.Button()
-        Me.Win_OSInfo = New System.Windows.Forms.Button()
-        Me.Win_Events = New System.Windows.Forms.Button()
-        Me.Win_BootOptions = New System.Windows.Forms.Button()
-        Me.Win_IPConfig = New System.Windows.Forms.Button()
-        Me.Win_Regedit = New System.Windows.Forms.Button()
-        Me.Win_TroubleShooting = New System.Windows.Forms.Button()
-        Me.Win_Programs = New System.Windows.Forms.Button()
-        Me.Win_Securily = New System.Windows.Forms.Button()
-        Me.Win_Cleaner = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Panel2_Icon = New System.Windows.Forms.PictureBox()
-        Me.Vid_Conv = New System.Windows.Forms.Button()
-        Me.Vid_Cut = New System.Windows.Forms.Button()
-        Me.Vid_Merge = New System.Windows.Forms.Button()
-        Me.Vid_FFMpeg = New System.Windows.Forms.Button()
         CType(Me.Main_Close, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_Win, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_MMedia, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -72,9 +72,9 @@ Partial Class MainScreen
         Me.Panel_Win_Main.SuspendLayout()
         CType(Me.Panel_Win_Icon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_MMedia.SuspendLayout()
+        CType(Me.Panel2_Icon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_Others.SuspendLayout()
         Me.Panel_Settings.SuspendLayout()
-        CType(Me.Panel2_Icon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Main_Close
@@ -183,6 +183,227 @@ Partial Class MainScreen
         Me.Panel_Win_Main.Size = New System.Drawing.Size(682, 379)
         Me.Panel_Win_Main.TabIndex = 2
         '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button2.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.White
+        Me.Button2.Location = New System.Drawing.Point(337, 673)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(275, 60)
+        Me.Button2.TabIndex = 17
+        Me.Button2.Text = "磁盘碎片整理"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Win_Cleaner
+        '
+        Me.Win_Cleaner.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Win_Cleaner.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Win_Cleaner.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Win_Cleaner.ForeColor = System.Drawing.Color.White
+        Me.Win_Cleaner.Location = New System.Drawing.Point(28, 673)
+        Me.Win_Cleaner.Name = "Win_Cleaner"
+        Me.Win_Cleaner.Size = New System.Drawing.Size(275, 60)
+        Me.Win_Cleaner.TabIndex = 16
+        Me.Win_Cleaner.Text = "Windows磁盘清理"
+        Me.Win_Cleaner.UseVisualStyleBackColor = False
+        '
+        'Win_Securily
+        '
+        Me.Win_Securily.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Win_Securily.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Win_Securily.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Win_Securily.ForeColor = System.Drawing.Color.White
+        Me.Win_Securily.Location = New System.Drawing.Point(28, 598)
+        Me.Win_Securily.Name = "Win_Securily"
+        Me.Win_Securily.Size = New System.Drawing.Size(275, 60)
+        Me.Win_Securily.TabIndex = 15
+        Me.Win_Securily.Text = "打开安全与维护"
+        Me.Win_Securily.UseVisualStyleBackColor = False
+        '
+        'Win_Programs
+        '
+        Me.Win_Programs.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Win_Programs.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Win_Programs.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Win_Programs.ForeColor = System.Drawing.Color.White
+        Me.Win_Programs.Location = New System.Drawing.Point(28, 96)
+        Me.Win_Programs.Name = "Win_Programs"
+        Me.Win_Programs.Size = New System.Drawing.Size(275, 60)
+        Me.Win_Programs.TabIndex = 14
+        Me.Win_Programs.Text = "Windows程序管理"
+        Me.Win_Programs.UseVisualStyleBackColor = False
+        '
+        'Win_TroubleShooting
+        '
+        Me.Win_TroubleShooting.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Win_TroubleShooting.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Win_TroubleShooting.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Win_TroubleShooting.ForeColor = System.Drawing.Color.White
+        Me.Win_TroubleShooting.Location = New System.Drawing.Point(28, 433)
+        Me.Win_TroubleShooting.Name = "Win_TroubleShooting"
+        Me.Win_TroubleShooting.Size = New System.Drawing.Size(275, 60)
+        Me.Win_TroubleShooting.TabIndex = 13
+        Me.Win_TroubleShooting.Text = "Windows疑难解答"
+        Me.Win_TroubleShooting.UseVisualStyleBackColor = False
+        '
+        'Win_Regedit
+        '
+        Me.Win_Regedit.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Win_Regedit.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Win_Regedit.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Win_Regedit.ForeColor = System.Drawing.Color.White
+        Me.Win_Regedit.Location = New System.Drawing.Point(337, 433)
+        Me.Win_Regedit.Name = "Win_Regedit"
+        Me.Win_Regedit.Size = New System.Drawing.Size(275, 60)
+        Me.Win_Regedit.TabIndex = 12
+        Me.Win_Regedit.Text = "注册表编辑器"
+        Me.Win_Regedit.UseVisualStyleBackColor = False
+        '
+        'Win_IPConfig
+        '
+        Me.Win_IPConfig.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Win_IPConfig.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Win_IPConfig.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Win_IPConfig.ForeColor = System.Drawing.Color.White
+        Me.Win_IPConfig.Location = New System.Drawing.Point(337, 518)
+        Me.Win_IPConfig.Name = "Win_IPConfig"
+        Me.Win_IPConfig.Size = New System.Drawing.Size(275, 60)
+        Me.Win_IPConfig.TabIndex = 11
+        Me.Win_IPConfig.Text = "网络连接属性"
+        Me.Win_IPConfig.UseVisualStyleBackColor = False
+        '
+        'Win_BootOptions
+        '
+        Me.Win_BootOptions.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Win_BootOptions.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Win_BootOptions.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Win_BootOptions.ForeColor = System.Drawing.Color.White
+        Me.Win_BootOptions.Location = New System.Drawing.Point(337, 598)
+        Me.Win_BootOptions.Name = "Win_BootOptions"
+        Me.Win_BootOptions.Size = New System.Drawing.Size(275, 60)
+        Me.Win_BootOptions.TabIndex = 10
+        Me.Win_BootOptions.Text = "Windows引导选项"
+        Me.Win_BootOptions.UseVisualStyleBackColor = False
+        '
+        'Win_Events
+        '
+        Me.Win_Events.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Win_Events.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Win_Events.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Win_Events.ForeColor = System.Drawing.Color.White
+        Me.Win_Events.Location = New System.Drawing.Point(28, 518)
+        Me.Win_Events.Name = "Win_Events"
+        Me.Win_Events.Size = New System.Drawing.Size(275, 60)
+        Me.Win_Events.TabIndex = 9
+        Me.Win_Events.Text = "打开事件查看器"
+        Me.Win_Events.UseVisualStyleBackColor = False
+        '
+        'Win_OSInfo
+        '
+        Me.Win_OSInfo.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Win_OSInfo.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Win_OSInfo.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Win_OSInfo.ForeColor = System.Drawing.Color.White
+        Me.Win_OSInfo.Location = New System.Drawing.Point(28, 179)
+        Me.Win_OSInfo.Name = "Win_OSInfo"
+        Me.Win_OSInfo.Size = New System.Drawing.Size(275, 60)
+        Me.Win_OSInfo.TabIndex = 8
+        Me.Win_OSInfo.Text = "查看系统基本配置"
+        Me.Win_OSInfo.UseVisualStyleBackColor = False
+        '
+        'Win_Tasks
+        '
+        Me.Win_Tasks.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Win_Tasks.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Win_Tasks.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Win_Tasks.ForeColor = System.Drawing.Color.White
+        Me.Win_Tasks.Location = New System.Drawing.Point(337, 265)
+        Me.Win_Tasks.Name = "Win_Tasks"
+        Me.Win_Tasks.Size = New System.Drawing.Size(275, 60)
+        Me.Win_Tasks.TabIndex = 7
+        Me.Win_Tasks.Text = "打开任务计划程序"
+        Me.Win_Tasks.UseVisualStyleBackColor = False
+        '
+        'Win_OpenCmd
+        '
+        Me.Win_OpenCmd.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Win_OpenCmd.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Win_OpenCmd.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Win_OpenCmd.ForeColor = System.Drawing.Color.White
+        Me.Win_OpenCmd.Location = New System.Drawing.Point(28, 262)
+        Me.Win_OpenCmd.Name = "Win_OpenCmd"
+        Me.Win_OpenCmd.Size = New System.Drawing.Size(275, 60)
+        Me.Win_OpenCmd.TabIndex = 6
+        Me.Win_OpenCmd.Text = "打开命令行"
+        Me.Win_OpenCmd.UseVisualStyleBackColor = False
+        '
+        'Win_Devices
+        '
+        Me.Win_Devices.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Win_Devices.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Win_Devices.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Win_Devices.ForeColor = System.Drawing.Color.White
+        Me.Win_Devices.Location = New System.Drawing.Point(337, 181)
+        Me.Win_Devices.Name = "Win_Devices"
+        Me.Win_Devices.Size = New System.Drawing.Size(275, 60)
+        Me.Win_Devices.TabIndex = 5
+        Me.Win_Devices.Text = "打开设备管理器"
+        Me.Win_Devices.UseVisualStyleBackColor = False
+        '
+        'Win_Services
+        '
+        Me.Win_Services.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Win_Services.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Win_Services.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Win_Services.ForeColor = System.Drawing.Color.White
+        Me.Win_Services.Location = New System.Drawing.Point(28, 345)
+        Me.Win_Services.Name = "Win_Services"
+        Me.Win_Services.Size = New System.Drawing.Size(275, 60)
+        Me.Win_Services.TabIndex = 4
+        Me.Win_Services.Text = "管理系统服务"
+        Me.Win_Services.UseVisualStyleBackColor = False
+        '
+        'Win_WinVer
+        '
+        Me.Win_WinVer.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Win_WinVer.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Win_WinVer.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Win_WinVer.ForeColor = System.Drawing.Color.White
+        Me.Win_WinVer.Location = New System.Drawing.Point(337, 97)
+        Me.Win_WinVer.Name = "Win_WinVer"
+        Me.Win_WinVer.Size = New System.Drawing.Size(275, 60)
+        Me.Win_WinVer.TabIndex = 3
+        Me.Win_WinVer.Text = "显示系统版本信息"
+        Me.Win_WinVer.UseVisualStyleBackColor = False
+        '
+        'Win_GPEDIT
+        '
+        Me.Win_GPEDIT.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Win_GPEDIT.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Win_GPEDIT.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Win_GPEDIT.ForeColor = System.Drawing.Color.White
+        Me.Win_GPEDIT.Location = New System.Drawing.Point(337, 345)
+        Me.Win_GPEDIT.Name = "Win_GPEDIT"
+        Me.Win_GPEDIT.Size = New System.Drawing.Size(275, 60)
+        Me.Win_GPEDIT.TabIndex = 2
+        Me.Win_GPEDIT.Text = "打开组策略编辑器"
+        Me.Win_GPEDIT.UseVisualStyleBackColor = False
+        '
+        'Win_OpenTempFolder
+        '
+        Me.Win_OpenTempFolder.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Win_OpenTempFolder.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Win_OpenTempFolder.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Win_OpenTempFolder.ForeColor = System.Drawing.Color.White
+        Me.Win_OpenTempFolder.Location = New System.Drawing.Point(337, 13)
+        Me.Win_OpenTempFolder.Name = "Win_OpenTempFolder"
+        Me.Win_OpenTempFolder.Size = New System.Drawing.Size(275, 60)
+        Me.Win_OpenTempFolder.TabIndex = 1
+        Me.Win_OpenTempFolder.Text = "打开系统缓存文件夹"
+        Me.Win_OpenTempFolder.UseVisualStyleBackColor = False
+        '
         'Win_OpenControl
         '
         Me.Win_OpenControl.BackColor = System.Drawing.Color.DeepSkyBlue
@@ -231,6 +452,68 @@ Partial Class MainScreen
         Me.Panel_MMedia.Size = New System.Drawing.Size(720, 461)
         Me.Panel_MMedia.TabIndex = 11
         Me.Panel_MMedia.Visible = False
+        '
+        'Vid_FFMpeg
+        '
+        Me.Vid_FFMpeg.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Vid_FFMpeg.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Vid_FFMpeg.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Vid_FFMpeg.ForeColor = System.Drawing.Color.White
+        Me.Vid_FFMpeg.Location = New System.Drawing.Point(326, 147)
+        Me.Vid_FFMpeg.Name = "Vid_FFMpeg"
+        Me.Vid_FFMpeg.Size = New System.Drawing.Size(275, 60)
+        Me.Vid_FFMpeg.TabIndex = 8
+        Me.Vid_FFMpeg.Text = "运行FFMpeg"
+        Me.Vid_FFMpeg.UseVisualStyleBackColor = False
+        '
+        'Vid_Merge
+        '
+        Me.Vid_Merge.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Vid_Merge.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Vid_Merge.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Vid_Merge.ForeColor = System.Drawing.Color.White
+        Me.Vid_Merge.Location = New System.Drawing.Point(20, 147)
+        Me.Vid_Merge.Name = "Vid_Merge"
+        Me.Vid_Merge.Size = New System.Drawing.Size(275, 60)
+        Me.Vid_Merge.TabIndex = 7
+        Me.Vid_Merge.Text = "视频合并"
+        Me.Vid_Merge.UseVisualStyleBackColor = False
+        '
+        'Vid_Cut
+        '
+        Me.Vid_Cut.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Vid_Cut.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Vid_Cut.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Vid_Cut.ForeColor = System.Drawing.Color.White
+        Me.Vid_Cut.Location = New System.Drawing.Point(326, 68)
+        Me.Vid_Cut.Name = "Vid_Cut"
+        Me.Vid_Cut.Size = New System.Drawing.Size(275, 60)
+        Me.Vid_Cut.TabIndex = 6
+        Me.Vid_Cut.Text = "视频裁剪"
+        Me.Vid_Cut.UseVisualStyleBackColor = False
+        '
+        'Vid_Conv
+        '
+        Me.Vid_Conv.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Vid_Conv.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Vid_Conv.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Vid_Conv.ForeColor = System.Drawing.Color.White
+        Me.Vid_Conv.Location = New System.Drawing.Point(20, 68)
+        Me.Vid_Conv.Name = "Vid_Conv"
+        Me.Vid_Conv.Size = New System.Drawing.Size(275, 60)
+        Me.Vid_Conv.TabIndex = 5
+        Me.Vid_Conv.Text = "视频转换"
+        Me.Vid_Conv.UseVisualStyleBackColor = False
+        '
+        'Panel2_Icon
+        '
+        Me.Panel2_Icon.BackgroundImage = Global.Moonlight_Box.My.Resources.Resources.video
+        Me.Panel2_Icon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Panel2_Icon.Location = New System.Drawing.Point(0, 13)
+        Me.Panel2_Icon.Name = "Panel2_Icon"
+        Me.Panel2_Icon.Size = New System.Drawing.Size(82, 41)
+        Me.Panel2_Icon.TabIndex = 1
+        Me.Panel2_Icon.TabStop = False
         '
         'Panel2_Desc
         '
@@ -281,289 +564,6 @@ Partial Class MainScreen
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "4"
         '
-        'Win_OpenTempFolder
-        '
-        Me.Win_OpenTempFolder.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Win_OpenTempFolder.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Win_OpenTempFolder.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Win_OpenTempFolder.ForeColor = System.Drawing.Color.White
-        Me.Win_OpenTempFolder.Location = New System.Drawing.Point(337, 13)
-        Me.Win_OpenTempFolder.Name = "Win_OpenTempFolder"
-        Me.Win_OpenTempFolder.Size = New System.Drawing.Size(275, 60)
-        Me.Win_OpenTempFolder.TabIndex = 1
-        Me.Win_OpenTempFolder.Text = "打开系统缓存文件夹"
-        Me.Win_OpenTempFolder.UseVisualStyleBackColor = False
-        '
-        'Win_GPEDIT
-        '
-        Me.Win_GPEDIT.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Win_GPEDIT.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Win_GPEDIT.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Win_GPEDIT.ForeColor = System.Drawing.Color.White
-        Me.Win_GPEDIT.Location = New System.Drawing.Point(337, 345)
-        Me.Win_GPEDIT.Name = "Win_GPEDIT"
-        Me.Win_GPEDIT.Size = New System.Drawing.Size(275, 60)
-        Me.Win_GPEDIT.TabIndex = 2
-        Me.Win_GPEDIT.Text = "打开组策略编辑器"
-        Me.Win_GPEDIT.UseVisualStyleBackColor = False
-        '
-        'Win_WinVer
-        '
-        Me.Win_WinVer.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Win_WinVer.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Win_WinVer.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Win_WinVer.ForeColor = System.Drawing.Color.White
-        Me.Win_WinVer.Location = New System.Drawing.Point(337, 97)
-        Me.Win_WinVer.Name = "Win_WinVer"
-        Me.Win_WinVer.Size = New System.Drawing.Size(275, 60)
-        Me.Win_WinVer.TabIndex = 3
-        Me.Win_WinVer.Text = "显示系统版本信息"
-        Me.Win_WinVer.UseVisualStyleBackColor = False
-        '
-        'Win_Services
-        '
-        Me.Win_Services.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Win_Services.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Win_Services.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Win_Services.ForeColor = System.Drawing.Color.White
-        Me.Win_Services.Location = New System.Drawing.Point(28, 345)
-        Me.Win_Services.Name = "Win_Services"
-        Me.Win_Services.Size = New System.Drawing.Size(275, 60)
-        Me.Win_Services.TabIndex = 4
-        Me.Win_Services.Text = "管理系统服务"
-        Me.Win_Services.UseVisualStyleBackColor = False
-        '
-        'Win_Devices
-        '
-        Me.Win_Devices.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Win_Devices.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Win_Devices.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Win_Devices.ForeColor = System.Drawing.Color.White
-        Me.Win_Devices.Location = New System.Drawing.Point(337, 181)
-        Me.Win_Devices.Name = "Win_Devices"
-        Me.Win_Devices.Size = New System.Drawing.Size(275, 60)
-        Me.Win_Devices.TabIndex = 5
-        Me.Win_Devices.Text = "打开设备管理器"
-        Me.Win_Devices.UseVisualStyleBackColor = False
-        '
-        'Win_OpenCmd
-        '
-        Me.Win_OpenCmd.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Win_OpenCmd.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Win_OpenCmd.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Win_OpenCmd.ForeColor = System.Drawing.Color.White
-        Me.Win_OpenCmd.Location = New System.Drawing.Point(28, 262)
-        Me.Win_OpenCmd.Name = "Win_OpenCmd"
-        Me.Win_OpenCmd.Size = New System.Drawing.Size(275, 60)
-        Me.Win_OpenCmd.TabIndex = 6
-        Me.Win_OpenCmd.Text = "打开命令行"
-        Me.Win_OpenCmd.UseVisualStyleBackColor = False
-        '
-        'Win_Tasks
-        '
-        Me.Win_Tasks.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Win_Tasks.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Win_Tasks.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Win_Tasks.ForeColor = System.Drawing.Color.White
-        Me.Win_Tasks.Location = New System.Drawing.Point(337, 265)
-        Me.Win_Tasks.Name = "Win_Tasks"
-        Me.Win_Tasks.Size = New System.Drawing.Size(275, 60)
-        Me.Win_Tasks.TabIndex = 7
-        Me.Win_Tasks.Text = "打开任务计划程序"
-        Me.Win_Tasks.UseVisualStyleBackColor = False
-        '
-        'Win_OSInfo
-        '
-        Me.Win_OSInfo.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Win_OSInfo.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Win_OSInfo.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Win_OSInfo.ForeColor = System.Drawing.Color.White
-        Me.Win_OSInfo.Location = New System.Drawing.Point(28, 179)
-        Me.Win_OSInfo.Name = "Win_OSInfo"
-        Me.Win_OSInfo.Size = New System.Drawing.Size(275, 60)
-        Me.Win_OSInfo.TabIndex = 8
-        Me.Win_OSInfo.Text = "查看系统基本配置"
-        Me.Win_OSInfo.UseVisualStyleBackColor = False
-        '
-        'Win_Events
-        '
-        Me.Win_Events.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Win_Events.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Win_Events.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Win_Events.ForeColor = System.Drawing.Color.White
-        Me.Win_Events.Location = New System.Drawing.Point(28, 518)
-        Me.Win_Events.Name = "Win_Events"
-        Me.Win_Events.Size = New System.Drawing.Size(275, 60)
-        Me.Win_Events.TabIndex = 9
-        Me.Win_Events.Text = "打开事件查看器"
-        Me.Win_Events.UseVisualStyleBackColor = False
-        '
-        'Win_BootOptions
-        '
-        Me.Win_BootOptions.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Win_BootOptions.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Win_BootOptions.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Win_BootOptions.ForeColor = System.Drawing.Color.White
-        Me.Win_BootOptions.Location = New System.Drawing.Point(337, 598)
-        Me.Win_BootOptions.Name = "Win_BootOptions"
-        Me.Win_BootOptions.Size = New System.Drawing.Size(275, 60)
-        Me.Win_BootOptions.TabIndex = 10
-        Me.Win_BootOptions.Text = "Windows引导选项"
-        Me.Win_BootOptions.UseVisualStyleBackColor = False
-        '
-        'Win_IPConfig
-        '
-        Me.Win_IPConfig.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Win_IPConfig.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Win_IPConfig.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Win_IPConfig.ForeColor = System.Drawing.Color.White
-        Me.Win_IPConfig.Location = New System.Drawing.Point(337, 518)
-        Me.Win_IPConfig.Name = "Win_IPConfig"
-        Me.Win_IPConfig.Size = New System.Drawing.Size(275, 60)
-        Me.Win_IPConfig.TabIndex = 11
-        Me.Win_IPConfig.Text = "网络连接属性"
-        Me.Win_IPConfig.UseVisualStyleBackColor = False
-        '
-        'Win_Regedit
-        '
-        Me.Win_Regedit.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Win_Regedit.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Win_Regedit.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Win_Regedit.ForeColor = System.Drawing.Color.White
-        Me.Win_Regedit.Location = New System.Drawing.Point(337, 433)
-        Me.Win_Regedit.Name = "Win_Regedit"
-        Me.Win_Regedit.Size = New System.Drawing.Size(275, 60)
-        Me.Win_Regedit.TabIndex = 12
-        Me.Win_Regedit.Text = "注册表编辑器"
-        Me.Win_Regedit.UseVisualStyleBackColor = False
-        '
-        'Win_TroubleShooting
-        '
-        Me.Win_TroubleShooting.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Win_TroubleShooting.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Win_TroubleShooting.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Win_TroubleShooting.ForeColor = System.Drawing.Color.White
-        Me.Win_TroubleShooting.Location = New System.Drawing.Point(28, 433)
-        Me.Win_TroubleShooting.Name = "Win_TroubleShooting"
-        Me.Win_TroubleShooting.Size = New System.Drawing.Size(275, 60)
-        Me.Win_TroubleShooting.TabIndex = 13
-        Me.Win_TroubleShooting.Text = "Windows疑难解答"
-        Me.Win_TroubleShooting.UseVisualStyleBackColor = False
-        '
-        'Win_Programs
-        '
-        Me.Win_Programs.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Win_Programs.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Win_Programs.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Win_Programs.ForeColor = System.Drawing.Color.White
-        Me.Win_Programs.Location = New System.Drawing.Point(28, 96)
-        Me.Win_Programs.Name = "Win_Programs"
-        Me.Win_Programs.Size = New System.Drawing.Size(275, 60)
-        Me.Win_Programs.TabIndex = 14
-        Me.Win_Programs.Text = "Windows程序管理"
-        Me.Win_Programs.UseVisualStyleBackColor = False
-        '
-        'Win_Securily
-        '
-        Me.Win_Securily.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Win_Securily.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Win_Securily.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Win_Securily.ForeColor = System.Drawing.Color.White
-        Me.Win_Securily.Location = New System.Drawing.Point(28, 598)
-        Me.Win_Securily.Name = "Win_Securily"
-        Me.Win_Securily.Size = New System.Drawing.Size(275, 60)
-        Me.Win_Securily.TabIndex = 15
-        Me.Win_Securily.Text = "打开安全与维护"
-        Me.Win_Securily.UseVisualStyleBackColor = False
-        '
-        'Win_Cleaner
-        '
-        Me.Win_Cleaner.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Win_Cleaner.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Win_Cleaner.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Win_Cleaner.ForeColor = System.Drawing.Color.White
-        Me.Win_Cleaner.Location = New System.Drawing.Point(28, 673)
-        Me.Win_Cleaner.Name = "Win_Cleaner"
-        Me.Win_Cleaner.Size = New System.Drawing.Size(275, 60)
-        Me.Win_Cleaner.TabIndex = 16
-        Me.Win_Cleaner.Text = "Windows磁盘清理"
-        Me.Win_Cleaner.UseVisualStyleBackColor = False
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button2.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(337, 673)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(275, 60)
-        Me.Button2.TabIndex = 17
-        Me.Button2.Text = "磁盘碎片整理"
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'Panel2_Icon
-        '
-        Me.Panel2_Icon.BackgroundImage = Global.Moonlight_Box.My.Resources.Resources.video
-        Me.Panel2_Icon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Panel2_Icon.Location = New System.Drawing.Point(0, 13)
-        Me.Panel2_Icon.Name = "Panel2_Icon"
-        Me.Panel2_Icon.Size = New System.Drawing.Size(82, 41)
-        Me.Panel2_Icon.TabIndex = 1
-        Me.Panel2_Icon.TabStop = False
-        '
-        'Vid_Conv
-        '
-        Me.Vid_Conv.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Vid_Conv.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Vid_Conv.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Vid_Conv.ForeColor = System.Drawing.Color.White
-        Me.Vid_Conv.Location = New System.Drawing.Point(20, 68)
-        Me.Vid_Conv.Name = "Vid_Conv"
-        Me.Vid_Conv.Size = New System.Drawing.Size(275, 60)
-        Me.Vid_Conv.TabIndex = 5
-        Me.Vid_Conv.Text = "视频转换"
-        Me.Vid_Conv.UseVisualStyleBackColor = False
-        '
-        'Vid_Cut
-        '
-        Me.Vid_Cut.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Vid_Cut.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Vid_Cut.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Vid_Cut.ForeColor = System.Drawing.Color.White
-        Me.Vid_Cut.Location = New System.Drawing.Point(326, 68)
-        Me.Vid_Cut.Name = "Vid_Cut"
-        Me.Vid_Cut.Size = New System.Drawing.Size(275, 60)
-        Me.Vid_Cut.TabIndex = 6
-        Me.Vid_Cut.Text = "视频裁剪"
-        Me.Vid_Cut.UseVisualStyleBackColor = False
-        '
-        'Vid_Merge
-        '
-        Me.Vid_Merge.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Vid_Merge.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Vid_Merge.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Vid_Merge.ForeColor = System.Drawing.Color.White
-        Me.Vid_Merge.Location = New System.Drawing.Point(20, 147)
-        Me.Vid_Merge.Name = "Vid_Merge"
-        Me.Vid_Merge.Size = New System.Drawing.Size(275, 60)
-        Me.Vid_Merge.TabIndex = 7
-        Me.Vid_Merge.Text = "视频合并"
-        Me.Vid_Merge.UseVisualStyleBackColor = False
-        '
-        'Vid_FFMpeg
-        '
-        Me.Vid_FFMpeg.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Vid_FFMpeg.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Vid_FFMpeg.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Vid_FFMpeg.ForeColor = System.Drawing.Color.White
-        Me.Vid_FFMpeg.Location = New System.Drawing.Point(326, 147)
-        Me.Vid_FFMpeg.Name = "Vid_FFMpeg"
-        Me.Vid_FFMpeg.Size = New System.Drawing.Size(275, 60)
-        Me.Vid_FFMpeg.TabIndex = 8
-        Me.Vid_FFMpeg.Text = "运行FFMpeg"
-        Me.Vid_FFMpeg.UseVisualStyleBackColor = False
-        '
         'MainScreen
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
@@ -595,11 +595,11 @@ Partial Class MainScreen
         CType(Me.Panel_Win_Icon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_MMedia.ResumeLayout(False)
         Me.Panel_MMedia.PerformLayout()
+        CType(Me.Panel2_Icon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_Others.ResumeLayout(False)
         Me.Panel_Others.PerformLayout()
         Me.Panel_Settings.ResumeLayout(False)
         Me.Panel_Settings.PerformLayout()
-        CType(Me.Panel2_Icon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

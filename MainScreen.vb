@@ -234,4 +234,8 @@
     Private Sub Vid_Conv_Click(sender As Object, e As EventArgs) Handles Vid_Conv.Click
         VideoConvert.Show()
     End Sub
+
+    Private Sub Vid_Cut_Click(sender As Object, e As EventArgs) Handles Vid_Cut.Click
+        VideoCut.Show()
+    End Sub
 End Class
