@@ -47,7 +47,6 @@ Partial Class MainScreen
         Me.Win_Services = New System.Windows.Forms.Button()
         Me.Win_WinVer = New System.Windows.Forms.Button()
         Me.Win_GPEDIT = New System.Windows.Forms.Button()
-        Me.Win_OpenTempFolder = New System.Windows.Forms.Button()
         Me.Win_OpenControl = New System.Windows.Forms.Button()
         Me.Panel_Win_Icon = New System.Windows.Forms.PictureBox()
         Me.Panel_Win_Desc = New System.Windows.Forms.Label()
@@ -63,7 +62,11 @@ Partial Class MainScreen
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel3_Desc = New System.Windows.Forms.Label()
         Me.Panel_Settings = New System.Windows.Forms.Panel()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Panel4_Desc = New System.Windows.Forms.Label()
         CType(Me.Main_Close, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_Win, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_MMedia, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -78,6 +81,7 @@ Partial Class MainScreen
         Me.Panel_Others.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_Settings.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Main_Close
@@ -179,7 +183,6 @@ Partial Class MainScreen
         Me.Panel_Win_Main.Controls.Add(Me.Win_Services)
         Me.Panel_Win_Main.Controls.Add(Me.Win_WinVer)
         Me.Panel_Win_Main.Controls.Add(Me.Win_GPEDIT)
-        Me.Panel_Win_Main.Controls.Add(Me.Win_OpenTempFolder)
         Me.Panel_Win_Main.Controls.Add(Me.Win_OpenControl)
         Me.Panel_Win_Main.Location = New System.Drawing.Point(17, 68)
         Me.Panel_Win_Main.Name = "Panel_Win_Main"
@@ -192,7 +195,7 @@ Partial Class MainScreen
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button2.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(337, 673)
+        Me.Button2.Location = New System.Drawing.Point(337, 598)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(275, 60)
         Me.Button2.TabIndex = 17
@@ -283,7 +286,7 @@ Partial Class MainScreen
         Me.Win_BootOptions.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Win_BootOptions.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Win_BootOptions.ForeColor = System.Drawing.Color.White
-        Me.Win_BootOptions.Location = New System.Drawing.Point(337, 598)
+        Me.Win_BootOptions.Location = New System.Drawing.Point(337, 13)
         Me.Win_BootOptions.Name = "Win_BootOptions"
         Me.Win_BootOptions.Size = New System.Drawing.Size(275, 60)
         Me.Win_BootOptions.TabIndex = 10
@@ -394,19 +397,6 @@ Partial Class MainScreen
         Me.Win_GPEDIT.Text = "打开组策略编辑器"
         Me.Win_GPEDIT.UseVisualStyleBackColor = False
         '
-        'Win_OpenTempFolder
-        '
-        Me.Win_OpenTempFolder.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Win_OpenTempFolder.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Win_OpenTempFolder.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Win_OpenTempFolder.ForeColor = System.Drawing.Color.White
-        Me.Win_OpenTempFolder.Location = New System.Drawing.Point(337, 13)
-        Me.Win_OpenTempFolder.Name = "Win_OpenTempFolder"
-        Me.Win_OpenTempFolder.Size = New System.Drawing.Size(275, 60)
-        Me.Win_OpenTempFolder.TabIndex = 1
-        Me.Win_OpenTempFolder.Text = "打开系统缓存文件夹"
-        Me.Win_OpenTempFolder.UseVisualStyleBackColor = False
-        '
         'Win_OpenControl
         '
         Me.Win_OpenControl.BackColor = System.Drawing.Color.DeepSkyBlue
@@ -433,11 +423,11 @@ Partial Class MainScreen
         'Panel_Win_Desc
         '
         Me.Panel_Win_Desc.AutoSize = True
-        Me.Panel_Win_Desc.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 26.0!)
+        Me.Panel_Win_Desc.Font = New System.Drawing.Font("黑体", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Panel_Win_Desc.ForeColor = System.Drawing.Color.White
         Me.Panel_Win_Desc.Location = New System.Drawing.Point(88, 17)
         Me.Panel_Win_Desc.Name = "Panel_Win_Desc"
-        Me.Panel_Win_Desc.Size = New System.Drawing.Size(232, 37)
+        Me.Panel_Win_Desc.Size = New System.Drawing.Size(213, 35)
         Me.Panel_Win_Desc.TabIndex = 0
         Me.Panel_Win_Desc.Text = "Windows工具"
         '
@@ -521,11 +511,11 @@ Partial Class MainScreen
         'Panel2_Desc
         '
         Me.Panel2_Desc.AutoSize = True
-        Me.Panel2_Desc.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 26.0!)
+        Me.Panel2_Desc.Font = New System.Drawing.Font("黑体", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Panel2_Desc.ForeColor = System.Drawing.Color.White
         Me.Panel2_Desc.Location = New System.Drawing.Point(88, 17)
         Me.Panel2_Desc.Name = "Panel2_Desc"
-        Me.Panel2_Desc.Size = New System.Drawing.Size(387, 37)
+        Me.Panel2_Desc.Size = New System.Drawing.Size(357, 35)
         Me.Panel2_Desc.TabIndex = 0
         Me.Panel2_Desc.Text = "视频工具-基于FFMpeg"
         '
@@ -567,32 +557,81 @@ Partial Class MainScreen
         'Panel3_Desc
         '
         Me.Panel3_Desc.AutoSize = True
-        Me.Panel3_Desc.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 26.0!)
+        Me.Panel3_Desc.Font = New System.Drawing.Font("黑体", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Panel3_Desc.ForeColor = System.Drawing.Color.White
         Me.Panel3_Desc.Location = New System.Drawing.Point(88, 17)
         Me.Panel3_Desc.Name = "Panel3_Desc"
-        Me.Panel3_Desc.Size = New System.Drawing.Size(157, 37)
+        Me.Panel3_Desc.Size = New System.Drawing.Size(159, 35)
         Me.Panel3_Desc.TabIndex = 2
         Me.Panel3_Desc.Text = "其他工具"
         '
         'Panel_Settings
         '
         Me.Panel_Settings.BackColor = System.Drawing.Color.Transparent
-        Me.Panel_Settings.Controls.Add(Me.Label4)
+        Me.Panel_Settings.Controls.Add(Me.LinkLabel1)
+        Me.Panel_Settings.Controls.Add(Me.Label3)
+        Me.Panel_Settings.Controls.Add(Me.Label2)
+        Me.Panel_Settings.Controls.Add(Me.PictureBox2)
+        Me.Panel_Settings.Controls.Add(Me.Panel4_Desc)
         Me.Panel_Settings.Location = New System.Drawing.Point(167, 20)
         Me.Panel_Settings.Name = "Panel_Settings"
         Me.Panel_Settings.Size = New System.Drawing.Size(720, 461)
         Me.Panel_Settings.TabIndex = 13
         Me.Panel_Settings.Visible = False
         '
-        'Label4
+        'LinkLabel1
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(5, 13)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(11, 12)
-        Me.Label4.TabIndex = 0
-        Me.Label4.Text = "4"
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.Font = New System.Drawing.Font("黑体", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.LinkLabel1.Location = New System.Drawing.Point(40, 165)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(572, 27)
+        Me.LinkLabel1.TabIndex = 6
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "https://github.com/zi-jing/Moonlight-Box"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("黑体", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(21, 132)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(180, 27)
+        Me.Label3.TabIndex = 5
+        Me.Label3.Text = "GitHub地址："
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("黑体", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(18, 68)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(194, 54)
+        Me.Label2.TabIndex = 4
+        Me.Label2.Text = "版本：1.0.0" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "作者：zi_jing"
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackgroundImage = Global.Moonlight_Box.My.Resources.Resources.settings
+        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox2.Location = New System.Drawing.Point(0, 13)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(82, 41)
+        Me.PictureBox2.TabIndex = 3
+        Me.PictureBox2.TabStop = False
+        '
+        'Panel4_Desc
+        '
+        Me.Panel4_Desc.AutoSize = True
+        Me.Panel4_Desc.Font = New System.Drawing.Font("黑体", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Panel4_Desc.ForeColor = System.Drawing.Color.White
+        Me.Panel4_Desc.Location = New System.Drawing.Point(88, 17)
+        Me.Panel4_Desc.Name = "Panel4_Desc"
+        Me.Panel4_Desc.Size = New System.Drawing.Size(87, 35)
+        Me.Panel4_Desc.TabIndex = 2
+        Me.Panel4_Desc.Text = "设置"
         '
         'MainScreen
         '
@@ -602,10 +641,10 @@ Partial Class MainScreen
         Me.ClientSize = New System.Drawing.Size(944, 501)
         Me.Controls.Add(Me.ButtonsPanel)
         Me.Controls.Add(Me.Main_Close)
-        Me.Controls.Add(Me.Panel_Others)
-        Me.Controls.Add(Me.Panel_MMedia)
         Me.Controls.Add(Me.Panel_Win)
         Me.Controls.Add(Me.Panel_Settings)
+        Me.Controls.Add(Me.Panel_Others)
+        Me.Controls.Add(Me.Panel_MMedia)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -631,6 +670,7 @@ Partial Class MainScreen
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_Settings.ResumeLayout(False)
         Me.Panel_Settings.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -646,7 +686,6 @@ Partial Class MainScreen
     Friend WithEvents Panel2_Desc As Label
     Friend WithEvents Panel_Others As Panel
     Friend WithEvents Panel_Settings As Panel
-    Friend WithEvents Label4 As Label
     Friend WithEvents Panel_Win_Desc As Label
     Friend WithEvents Panel_Win_Icon As PictureBox
     Friend WithEvents Panel_Win_Main As Panel
@@ -657,7 +696,6 @@ Partial Class MainScreen
     Friend WithEvents Win_Services As Button
     Friend WithEvents Win_WinVer As Button
     Friend WithEvents Win_GPEDIT As Button
-    Friend WithEvents Win_OpenTempFolder As Button
     Friend WithEvents Win_Programs As Button
     Friend WithEvents Win_TroubleShooting As Button
     Friend WithEvents Win_Regedit As Button
@@ -676,4 +714,9 @@ Partial Class MainScreen
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Panel3_Desc As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents Panel4_Desc As Label
 End Class

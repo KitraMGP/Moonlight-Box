@@ -27,26 +27,26 @@ Module MainFunctions
     End Sub
 
     '设置字体
-    Sub SetFont(ByVal Label As Label, ByVal fontsize As Integer, color As Color)
-        Dim fs = My.Computer.FileSystem
-        Dim temp = fs.SpecialDirectories.Temp
-        Dim fontpath As String = temp + "/MoonLight_Box/moonlight_toolbox_font.ttf"
+    'Sub SetFont(ByVal Label As Label, ByVal fontsize As Integer)
+    'Dim fs = My.Computer.FileSystem
+    'Dim temp = fs.SpecialDirectories.Temp
+    'Dim fontpath As String = temp + "/MoonLight_Box/moonlight_toolbox_font.ttf"
+    '
+    'Dim g As Graphics = Start_Screen.CreateGraphics
 
-        'Dim g As Graphics = Start_Screen.CreateGraphics
+    'Dim PFC As New Drawing.Text.PrivateFontCollection() '私有字符集和
+    '   PFC.AddFontFile(fontpath) '载入一个字符文件
 
-        Dim PFC As New Drawing.Text.PrivateFontCollection() '私有字符集和
-        PFC.AddFontFile(fontpath) '载入一个字符文件
-
-        Dim FFS() As FontFamily = PFC.Families
+    'Dim FFS() As FontFamily = PFC.Families
 
 
-        '设置字体
-        'Start_Screen.Start_Name.Font = New Font(FFS(0), 72)
-        'Start_Screen.Start_Status.Font = New Font(FFS(0), 20)
-        Label.Font = New Font(FFS(0), fontsize)
-        Label.ForeColor = color
+    '设置字体
+    'Start_Screen.Start_Name.Font = New Font(FFS(0), 72)
+    'Start_Screen.Start_Status.Font = New Font(FFS(0), 20)
+    '   Label.Font = New Font(FFS(0), fontsize)
 
-    End Sub
+
+    'End Sub
 
     '提取资源文件
     Sub ExtractResources()
@@ -54,9 +54,13 @@ Module MainFunctions
         Dim temp = fs.SpecialDirectories.Temp
         Dim resources As System.Resources.ResourceManager = My.Resources.ResourceManager
         Dim b1() As Byte = resources.GetObject("font1")
-        Dim s1 As IO.Stream = File.Create(temp + "/MoonLight_Box/moonlight_toolbox_font.ttf") '要保存的路径
-        s1.Write(b1, 0, b1.Length)
-        s1.Close()
+        If fs.DirectoryExists(temp + "/MoonLight_Box") = True Then
+            fs.DeleteDirectory(temp + "/MoonLight_Box", FileIO.DeleteDirectoryOption.DeleteAllContents)
+        End If
+        fs.CreateDirectory(temp + "/MoonLight_Box")
+        'Dim s1 As IO.Stream = File.Create(temp + "/MoonLight_Box/moonlight_toolbox_font.ttf") '要保存的路径
+        's1.Write(b1, 0, b1.Length)
+        's1.Close()
 
         Dim b2() As Byte = resources.GetObject("_7za")
         Dim s2 As IO.Stream = File.Create(temp + "/MoonLight_Box/7za.exe")
@@ -69,8 +73,13 @@ Module MainFunctions
         s3.Write(b3, 0, b3.Length)
         s3.Close()
 
+        Dim b4() As Byte = resources.GetObject("ipc")
+        Dim s4 As IO.Stream = File.Create(temp + "/MoonLight_Box/ipc.bat")
+        s4.Write(b4, 0, b4.Length)
+        s4.Close()
 
-        Shell(fs.SpecialDirectories.Temp + "/MoonLight_Box/7za.exe x -o" + fs.SpecialDirectories.Temp + "/MoonLight_Box/ " + fs.SpecialDirectories.Temp + "/MoonLight_Box/ffmpeg.zip", AppWinStyle.NormalFocus)
+
+        Shell(fs.SpecialDirectories.Temp + "/MoonLight_Box/7za.exe x -o" + fs.SpecialDirectories.Temp + "/MoonLight_Box/ " + fs.SpecialDirectories.Temp + "/MoonLight_Box/ffmpeg.zip", AppWinStyle.MinimizedFocus)
         Delay(2000)
     End Sub
 

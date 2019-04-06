@@ -35,7 +35,25 @@
 
 
     Private Sub MainScreen_Load(sender As Object, e As EventArgs) Handles Me.Load
-        SetFont(Panel_Win_Desc, 26, Color.White)
+
+        'SetFont(Panel_Win_Desc, 26)
+        'SetFont(Panel2_Desc, 26)
+        'SetFont(Panel3_Desc, 26)
+        'SetFont(Panel4_Desc, 26)
+        'SetFont(Label2, 20)
+        'SetFont(Label3, 20)
+        'SetFont(LinkLabel1, 20)
+        'Dim fs = My.Computer.FileSystem
+        'Dim temp = fs.SpecialDirectories.Temp
+        'Dim fontpath As String = temp + "/MoonLight_Box/moonlight_toolbox_font.ttf"
+
+        'Dim g As Graphics = Start_Screen.CreateGraphics
+
+        'Dim PFC As New Drawing.Text.PrivateFontCollection() '私有字符集和
+        'PFC.AddFontFile(fontpath) '载入一个字符文件
+
+        'Dim FFS() As FontFamily = PFC.Families
+        'LinkLabel1.Font = New Font(FFS(0), 20)
 
 
         'Dim g As Graphics = Me.CreateGraphics()
@@ -160,27 +178,31 @@
     End Sub
 
     Private Sub Win_OpenControl_Click(sender As Object, e As EventArgs) Handles Win_OpenControl.Click
-        Shell("control.exe", AppWinStyle.NormalFocus)
+        Shell("control.exe", AppWinStyle.MinimizedFocus)
     End Sub
 
-    Private Sub Win_OpenTempFolder_Click(sender As Object, e As EventArgs) Handles Win_OpenTempFolder.Click
-        'Shell("explorer.exe %temp%\", AppWinStyle.NormalFocus)
+    Private Sub Win_OpenTempFolder_Click(sender As Object, e As EventArgs)
+        'Shell("explorer.exe %temp%\", AppWinStyle.MinimizedFocus)
+        Try
+            System.Diagnostics.Process.Start("%temp%")
+        Catch ex As Exception
+        End Try
     End Sub
 
     Private Sub Win_Programs_Click(sender As Object, e As EventArgs) Handles Win_Programs.Click
-        Shell(Application.StartupPath + "\programs.bat", AppWinStyle.MinimizedFocus)
+        Shell("cmd.exe /c start appwiz.cpl", AppWinStyle.MinimizedFocus)
     End Sub
 
     Private Sub Win_WinVer_Click(sender As Object, e As EventArgs) Handles Win_WinVer.Click
-        'Shell("winver.exe", AppWinStyle.NormalFocus)
+        Shell("cmd.exe /c start winver.exe", AppWinStyle.MinimizedFocus)
     End Sub
 
     Private Sub Win_OSInfo_Click(sender As Object, e As EventArgs) Handles Win_OSInfo.Click
-        Shell("control.exe system", AppWinStyle.NormalFocus)
+        Shell("cmd.exe /c start control.exe system", AppWinStyle.MinimizedFocus)
     End Sub
 
     Private Sub Win_Devices_Click(sender As Object, e As EventArgs) Handles Win_Devices.Click
-        'Shell("compmgmt.msc", AppWinStyle.NormalFocus)
+        Shell("cmd.exe /c start compmgmt.msc", AppWinStyle.MinimizedFocus)
     End Sub
 
     Private Sub Win_OpenCmd_Click(sender As Object, e As EventArgs) Handles Win_OpenCmd.Click
@@ -188,47 +210,49 @@
     End Sub
 
     Private Sub Win_Tasks_Click(sender As Object, e As EventArgs) Handles Win_Tasks.Click
-        'Shell("taskschd.msc /s", AppWinStyle.NormalFocus)
+        Shell("cmd.exe /c start taskschd.msc /s", AppWinStyle.MinimizedFocus)
     End Sub
 
     Private Sub Win_Services_Click(sender As Object, e As EventArgs) Handles Win_Services.Click
-        'Shell("services.msc", AppWinStyle.NormalFocus)
+        Shell("cmd.exe /c start services.msc", AppWinStyle.MinimizedFocus)
     End Sub
 
     Private Sub Win_GPEDIT_Click(sender As Object, e As EventArgs) Handles Win_GPEDIT.Click
-        'Shell("gpedit.msc", AppWinStyle.NormalFocus)
+        Shell("cmd.exe /c start gpedit.msc", AppWinStyle.MinimizedFocus)
     End Sub
 
     Private Sub Win_TroubleShooting_Click(sender As Object, e As EventArgs) Handles Win_TroubleShooting.Click
-        Shell("control.exe /name Microsoft.Troubleshooting", AppWinStyle.NormalFocus)
+        Shell("cmd.exe /c start control.exe /name Microsoft.Troubleshooting", AppWinStyle.MinimizedFocus)
     End Sub
 
     Private Sub Win_Regedit_Click(sender As Object, e As EventArgs) Handles Win_Regedit.Click
-        'Shell("regedit.exe", AppWinStyle.NormalFocus)
+        Shell("cmd.exe /c start regedit.exe", AppWinStyle.MinimizedFocus)
     End Sub
 
     Private Sub Win_Events_Click(sender As Object, e As EventArgs) Handles Win_Events.Click
-        'Shell("eventvwr.exe", AppWinStyle.NormalFocus)
+        Shell("cmd.exe /c start eventvwr.exe", AppWinStyle.MinimizedFocus)
     End Sub
 
     Private Sub Win_IPConfig_Click(sender As Object, e As EventArgs) Handles Win_IPConfig.Click
-        'Shell("ipconfig.exe", AppWinStyle.NormalFocus)
+        Dim fs = My.Computer.FileSystem
+        Dim temp = fs.SpecialDirectories.Temp
+        Shell(temp + "/MoonLight_Box/ipc.bat", AppWinStyle.NormalFocus)
     End Sub
 
     Private Sub Win_Securily_Click(sender As Object, e As EventArgs) Handles Win_Securily.Click
-        'Shell("wscui.cpl", AppWinStyle.NormalFocus)
+        Shell("cmd.exe /c start wscui.cpl", AppWinStyle.MinimizedFocus)
     End Sub
 
     Private Sub Win_BootOptions_Click(sender As Object, e As EventArgs) Handles Win_BootOptions.Click
-        'Shell("msconfig.exe", AppWinStyle.NormalFocus)
+        Shell("cmd.exe /c start msconfig.exe", AppWinStyle.MinimizedFocus)
     End Sub
 
     Private Sub Win_Cleaner_Click(sender As Object, e As EventArgs) Handles Win_Cleaner.Click
-        Shell("cleanmgr.exe", AppWinStyle.NormalFocus)
+        Shell("cmd.exe /c start cleanmgr.exe", AppWinStyle.MinimizedFocus)
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Shell("dfrgui.exe", AppWinStyle.NormalFocus)
+        Shell("cmd.exe /c start dfrgui.exe", AppWinStyle.MinimizedFocus)
     End Sub
 
     Private Sub Vid_Conv_Click(sender As Object, e As EventArgs) Handles Vid_Conv.Click
@@ -249,5 +273,12 @@
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         MD5.Show()
+    End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        Try
+            System.Diagnostics.Process.Start(LinkLabel1.Text)
+        Catch ex As Exception
+        End Try
     End Sub
 End Class
