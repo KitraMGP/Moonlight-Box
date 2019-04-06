@@ -281,4 +281,20 @@
         Catch ex As Exception
         End Try
     End Sub
+
+    '检查更新
+    Private Sub GetNewVersion_Click(sender As Object, e As EventArgs) Handles GetNewVersion.Click
+        Dim fs = My.Computer.FileSystem
+        Dim temp = fs.SpecialDirectories.Temp
+        '获取版本信息
+        Dim version As String
+        version = Download("https://github.com/zi-jing/MoonlightBox-UpdateCheck/raw/master/version.txt")
+        'MsgBox(version)
+        If version.Equals("1.0.0") = True Then
+            MsgBox("已是最新版本。")
+        Else
+            UpdateDialog.Show()
+        End If
+
+    End Sub
 End Class

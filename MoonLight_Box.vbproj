@@ -11,7 +11,7 @@
     <AssemblyName>MoonLight_Box</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
@@ -146,6 +146,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="UpdateDialog.Designer.vb">
+      <DependentUpon>UpdateDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="VideoCut.Designer.vb">
       <DependentUpon>VideoCut.vb</DependentUpon>
     </Compile>
@@ -186,6 +192,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateDialog.resx">
+      <DependentUpon>UpdateDialog.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VideoConvert.resx">
       <DependentUpon>VideoConvert.vb</DependentUpon>
@@ -329,6 +338,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="resources\7za.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WinHttp">
+      <Guid>{662901FC-6951-4854-9EB2-D9A2570F2B2E}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

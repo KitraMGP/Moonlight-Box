@@ -67,6 +67,7 @@ Partial Class MainScreen
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel4_Desc = New System.Windows.Forms.Label()
+        Me.GetNewVersion = New System.Windows.Forms.Button()
         CType(Me.Main_Close, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_Win, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_MMedia, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -568,6 +569,7 @@ Partial Class MainScreen
         'Panel_Settings
         '
         Me.Panel_Settings.BackColor = System.Drawing.Color.Transparent
+        Me.Panel_Settings.Controls.Add(Me.GetNewVersion)
         Me.Panel_Settings.Controls.Add(Me.LinkLabel1)
         Me.Panel_Settings.Controls.Add(Me.Label3)
         Me.Panel_Settings.Controls.Add(Me.Label2)
@@ -633,6 +635,15 @@ Partial Class MainScreen
         Me.Panel4_Desc.TabIndex = 2
         Me.Panel4_Desc.Text = "设置"
         '
+        'GetNewVersion
+        '
+        Me.GetNewVersion.Location = New System.Drawing.Point(205, 71)
+        Me.GetNewVersion.Name = "GetNewVersion"
+        Me.GetNewVersion.Size = New System.Drawing.Size(75, 23)
+        Me.GetNewVersion.TabIndex = 7
+        Me.GetNewVersion.Text = "检查更新"
+        Me.GetNewVersion.UseVisualStyleBackColor = True
+        '
         'MainScreen
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
@@ -641,10 +652,10 @@ Partial Class MainScreen
         Me.ClientSize = New System.Drawing.Size(944, 501)
         Me.Controls.Add(Me.ButtonsPanel)
         Me.Controls.Add(Me.Main_Close)
-        Me.Controls.Add(Me.Panel_Win)
         Me.Controls.Add(Me.Panel_Settings)
         Me.Controls.Add(Me.Panel_Others)
         Me.Controls.Add(Me.Panel_MMedia)
+        Me.Controls.Add(Me.Panel_Win)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -719,4 +730,5 @@ Partial Class MainScreen
     Friend WithEvents Label2 As Label
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Panel4_Desc As Label
+    Friend WithEvents GetNewVersion As Button
 End Class

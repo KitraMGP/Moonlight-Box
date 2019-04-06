@@ -1,5 +1,7 @@
 ﻿Imports System.IO
+Imports System.Net
 Imports System.Security.Cryptography
+Imports System.Text
 
 Module MainFunctions
 
@@ -91,6 +93,26 @@ Module MainFunctions
             Application.DoEvents()
         End While
     End Sub
+
+
+    Function Download(ByVal url As String)
+
+        '定义一个WinHttpRequest类的实体变量
+        Dim http = New WinHttp.WinHttpRequest
+
+        '调用Open函数，传入参数为请求方法，URL
+        '如果是get方法,URL由baseurl+？+字段名+&+字段值构成
+        http.Open("GET", url, False)
+
+        '发送请求
+        http.Send()
+
+        '请求结果为http.ResponseText
+        Return http.ResponseText
+
+
+
+    End Function
 
 
 
