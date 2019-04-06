@@ -1,4 +1,5 @@
 ﻿Imports System.IO
+Imports System.Security.Cryptography
 
 Module MainFunctions
 
@@ -82,39 +83,67 @@ Module MainFunctions
         End While
     End Sub
 
-    '运行程序函数
-    'Function RunCmd(ByVal strCMD As String) As String
-    ' Dim p As New Process
-    'With p.StartInfo
-    '.FileName = "cmd.exe"
-    '.Arguments = "/c " + strCMD
-    '.UseShellExecute = False
-    'irectStandardInput = True
-    '.RedirectStandardOutput = True
-    '.RedirectStandardError = True
-    'eNoWindow = True
-    ' With
-    ' p.Start()
-    'Dim result As String = p.StandardOutput.ReadToEnd()
-    ' p.Close()
-    'Return result
-    'End Function
 
 
     'Sub RunCmd(ByVal cmd As String, ByVal arg As String, ByVal out As TextBox)
     'Dim oProcess As New Process()
     'Dim oStartInfo As New ProcessStartInfo(cmd, arg)
-    '   oStartInfo.UseShellExecute = False
-    '  oStartInfo.RedirectStandardOutput = True
-    ' oProcess.StartInfo = oStartInfo
+    'oStartInfo.UseShellExecute = False
+    'oStartInfo.RedirectStandardOutput = True
+    'oProcess.StartInfo = oStartInfo
     'oProcess.Start()
-    '
+
     'Dim sOutput As String
     'Using oStreamReader As System.IO.StreamReader = oProcess.StandardOutput
     'While True
-    '           out.Text = out.Text + vbCrLf + oStreamReader.ReadLine()
-    '          Threading.Thread.Sleep(100)
+    'out.Text = out.Text + vbCrLf + oStreamReader.ReadToEnd()
+    'Threading.Thread.Sleep(100)
     'End While
     'End Using
+
+    'Using Process As Process = New Process()
+
+    'Process.StartInfo.FileName = cmd
+    '  Process.StartInfo.Arguments = arg
+    '    Process.StartInfo.UseShellExecute = False
+    '      Process.StartInfo.RedirectStandardOutput = True
+
+
+    'Process.Start()
+    '
+    ' Synchronously read the standard output of the spawned process. 
+    'Dim reader As StreamReader = Process.StandardOutput
+    '  Dim output As String = reader.ReadToEnd()
+
+    ' Write the redirected output to this application's window.
+    'Console.WriteLine(output)
+    'out.Text = out.Text + vbCrLf + output
+
+    'Process.WaitForExit()
+    'End Using
     'End Sub
+
+
+    '获取MD5
+    Function GetMD5(ByVal strSource As String) As String
+        Dim result As String = ""
+
+        Try
+
+            Dim fstream As New FileStream(strSource, FileMode.Open, FileAccess.Read)
+            Dim dataToHash(fstream.Length - 1) As Byte
+            fstream.Read(dataToHash, 0, fstream.Length)
+            fstream.Close()
+            Dim hashvalue As Byte() = CType(CryptoConfig.CreateFromName("MD5"), HashAlgorithm).ComputeHash(dataToHash)
+            Dim i As Integer
+            For i = 0 To hashvalue.Length - 1
+                result += Microsoft.VisualBasic.Right("00" + Hex(hashvalue(i)).ToLower, 2)
+            Next
+            Return result
+        Catch ex As Exception
+
+            Return result
+        End Try
+
+    End Function
 End Module

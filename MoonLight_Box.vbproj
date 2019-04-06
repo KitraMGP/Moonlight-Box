@@ -118,6 +118,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainFunctions.vb" />
+    <Compile Include="MD5.Designer.vb">
+      <DependentUpon>MD5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MD5.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -152,10 +158,25 @@
     <Compile Include="VideoConvert.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="VideoPlay.Designer.vb">
+      <DependentUpon>VideoPlay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VideoPlay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VideoRunCmd.Designer.vb">
+      <DependentUpon>VideoRunCmd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VideoRunCmd.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainScreen.resx">
       <DependentUpon>MainScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD5.resx">
+      <DependentUpon>MD5.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StartScreen.resx">
       <DependentUpon>StartScreen.vb</DependentUpon>
@@ -171,6 +192,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VideoCut.resx">
       <DependentUpon>VideoCut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VideoPlay.resx">
+      <DependentUpon>VideoPlay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VideoRunCmd.resx">
+      <DependentUpon>VideoRunCmd.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

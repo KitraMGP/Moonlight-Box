@@ -53,13 +53,15 @@ Partial Class MainScreen
         Me.Panel_Win_Desc = New System.Windows.Forms.Label()
         Me.Panel_MMedia = New System.Windows.Forms.Panel()
         Me.Vid_FFMpeg = New System.Windows.Forms.Button()
-        Me.Vid_Merge = New System.Windows.Forms.Button()
+        Me.Vid_Play = New System.Windows.Forms.Button()
         Me.Vid_Cut = New System.Windows.Forms.Button()
         Me.Vid_Conv = New System.Windows.Forms.Button()
         Me.Panel2_Icon = New System.Windows.Forms.PictureBox()
         Me.Panel2_Desc = New System.Windows.Forms.Label()
         Me.Panel_Others = New System.Windows.Forms.Panel()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Panel3_Desc = New System.Windows.Forms.Label()
         Me.Panel_Settings = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.Main_Close, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -74,6 +76,7 @@ Partial Class MainScreen
         Me.Panel_MMedia.SuspendLayout()
         CType(Me.Panel2_Icon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_Others.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_Settings.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -442,7 +445,7 @@ Partial Class MainScreen
         '
         Me.Panel_MMedia.BackColor = System.Drawing.Color.Transparent
         Me.Panel_MMedia.Controls.Add(Me.Vid_FFMpeg)
-        Me.Panel_MMedia.Controls.Add(Me.Vid_Merge)
+        Me.Panel_MMedia.Controls.Add(Me.Vid_Play)
         Me.Panel_MMedia.Controls.Add(Me.Vid_Cut)
         Me.Panel_MMedia.Controls.Add(Me.Vid_Conv)
         Me.Panel_MMedia.Controls.Add(Me.Panel2_Icon)
@@ -463,21 +466,21 @@ Partial Class MainScreen
         Me.Vid_FFMpeg.Name = "Vid_FFMpeg"
         Me.Vid_FFMpeg.Size = New System.Drawing.Size(275, 60)
         Me.Vid_FFMpeg.TabIndex = 8
-        Me.Vid_FFMpeg.Text = "运行FFMpeg"
+        Me.Vid_FFMpeg.Text = "自定义命令"
         Me.Vid_FFMpeg.UseVisualStyleBackColor = False
         '
-        'Vid_Merge
+        'Vid_Play
         '
-        Me.Vid_Merge.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Vid_Merge.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Vid_Merge.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Vid_Merge.ForeColor = System.Drawing.Color.White
-        Me.Vid_Merge.Location = New System.Drawing.Point(20, 147)
-        Me.Vid_Merge.Name = "Vid_Merge"
-        Me.Vid_Merge.Size = New System.Drawing.Size(275, 60)
-        Me.Vid_Merge.TabIndex = 7
-        Me.Vid_Merge.Text = "视频合并"
-        Me.Vid_Merge.UseVisualStyleBackColor = False
+        Me.Vid_Play.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Vid_Play.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Vid_Play.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Vid_Play.ForeColor = System.Drawing.Color.White
+        Me.Vid_Play.Location = New System.Drawing.Point(20, 147)
+        Me.Vid_Play.Name = "Vid_Play"
+        Me.Vid_Play.Size = New System.Drawing.Size(275, 60)
+        Me.Vid_Play.TabIndex = 7
+        Me.Vid_Play.Text = "视频播放"
+        Me.Vid_Play.UseVisualStyleBackColor = False
         '
         'Vid_Cut
         '
@@ -529,21 +532,48 @@ Partial Class MainScreen
         'Panel_Others
         '
         Me.Panel_Others.BackColor = System.Drawing.Color.Transparent
-        Me.Panel_Others.Controls.Add(Me.Label3)
+        Me.Panel_Others.Controls.Add(Me.Button1)
+        Me.Panel_Others.Controls.Add(Me.PictureBox1)
+        Me.Panel_Others.Controls.Add(Me.Panel3_Desc)
         Me.Panel_Others.Location = New System.Drawing.Point(167, 20)
         Me.Panel_Others.Name = "Panel_Others"
         Me.Panel_Others.Size = New System.Drawing.Size(720, 461)
         Me.Panel_Others.TabIndex = 12
         Me.Panel_Others.Visible = False
         '
-        'Label3
+        'Button1
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(5, 17)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(11, 12)
-        Me.Label3.TabIndex = 0
-        Me.Label3.Text = "3"
+        Me.Button1.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button1.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(17, 68)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(275, 60)
+        Me.Button1.TabIndex = 6
+        Me.Button1.Text = "MD5计算"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = Global.Moonlight_Box.My.Resources.Resources.pen
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox1.Location = New System.Drawing.Point(7, 13)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(82, 41)
+        Me.PictureBox1.TabIndex = 3
+        Me.PictureBox1.TabStop = False
+        '
+        'Panel3_Desc
+        '
+        Me.Panel3_Desc.AutoSize = True
+        Me.Panel3_Desc.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 26.0!)
+        Me.Panel3_Desc.ForeColor = System.Drawing.Color.White
+        Me.Panel3_Desc.Location = New System.Drawing.Point(88, 17)
+        Me.Panel3_Desc.Name = "Panel3_Desc"
+        Me.Panel3_Desc.Size = New System.Drawing.Size(157, 37)
+        Me.Panel3_Desc.TabIndex = 2
+        Me.Panel3_Desc.Text = "其他工具"
         '
         'Panel_Settings
         '
@@ -572,10 +602,10 @@ Partial Class MainScreen
         Me.ClientSize = New System.Drawing.Size(944, 501)
         Me.Controls.Add(Me.ButtonsPanel)
         Me.Controls.Add(Me.Main_Close)
+        Me.Controls.Add(Me.Panel_Others)
         Me.Controls.Add(Me.Panel_MMedia)
         Me.Controls.Add(Me.Panel_Win)
         Me.Controls.Add(Me.Panel_Settings)
-        Me.Controls.Add(Me.Panel_Others)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -598,6 +628,7 @@ Partial Class MainScreen
         CType(Me.Panel2_Icon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_Others.ResumeLayout(False)
         Me.Panel_Others.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_Settings.ResumeLayout(False)
         Me.Panel_Settings.PerformLayout()
         Me.ResumeLayout(False)
@@ -616,7 +647,6 @@ Partial Class MainScreen
     Friend WithEvents Panel_Others As Panel
     Friend WithEvents Panel_Settings As Panel
     Friend WithEvents Label4 As Label
-    Friend WithEvents Label3 As Label
     Friend WithEvents Panel_Win_Desc As Label
     Friend WithEvents Panel_Win_Icon As PictureBox
     Friend WithEvents Panel_Win_Main As Panel
@@ -640,7 +670,10 @@ Partial Class MainScreen
     Friend WithEvents Win_Cleaner As Button
     Friend WithEvents Panel2_Icon As PictureBox
     Friend WithEvents Vid_FFMpeg As Button
-    Friend WithEvents Vid_Merge As Button
+    Friend WithEvents Vid_Play As Button
     Friend WithEvents Vid_Cut As Button
     Friend WithEvents Vid_Conv As Button
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Panel3_Desc As Label
+    Friend WithEvents Button1 As Button
 End Class

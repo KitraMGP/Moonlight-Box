@@ -238,4 +238,16 @@
     Private Sub Vid_Cut_Click(sender As Object, e As EventArgs) Handles Vid_Cut.Click
         VideoCut.Show()
     End Sub
+
+    Private Sub Vid_Play_Click(sender As Object, e As EventArgs) Handles Vid_Play.Click
+        VideoPlay.Show()
+    End Sub
+
+    Private Sub Vid_FFMpeg_Click(sender As Object, e As EventArgs) Handles Vid_FFMpeg.Click
+        VideoRunCmd.Show()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        MD5.Show()
+    End Sub
 End Class

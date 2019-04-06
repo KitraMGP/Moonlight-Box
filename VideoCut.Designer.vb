@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class VideoCut
     Inherits System.Windows.Forms.Form
 
     'Form 重写 Dispose，以清理组件列表。
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class VideoCut
     '注意: 以下过程是 Windows 窗体设计器所必需的
     '可以使用 Windows 窗体设计器修改它。  
     '不要使用代码编辑器修改它。
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(VideoCut))
         Me.VidCut_Start = New System.Windows.Forms.Button()
@@ -38,6 +38,7 @@ Partial Class VideoCut
         Me.VidCut_StartTime = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.VidCut_KeepTime = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'VidCut_Start
@@ -164,11 +165,21 @@ Partial Class VideoCut
         Me.VidCut_KeepTime.TabIndex = 25
         Me.VidCut_KeepTime.Text = "00:00:00"
         '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(13, 194)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(419, 12)
+        Me.Label6.TabIndex = 26
+        Me.Label6.Text = "注：非h264编码的视频请去掉-bsf:v h264_mp4toannexb参数，使用自定义命令"
+        '
         'VideoCut
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(615, 209)
+        Me.ClientSize = New System.Drawing.Size(615, 218)
+        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.VidCut_KeepTime)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.VidCut_StartTime)
@@ -182,7 +193,7 @@ Partial Class VideoCut
         Me.Controls.Add(Me.VidCut_Src)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
@@ -209,4 +220,5 @@ Partial Class VideoCut
     Friend WithEvents VidCut_StartTime As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents VidCut_KeepTime As TextBox
+    Friend WithEvents Label6 As Label
 End Class
