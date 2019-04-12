@@ -2,6 +2,7 @@
 Imports System.Net
 Imports System.Security.Cryptography
 Imports System.Text
+Imports WinHttp
 
 Module MainFunctions
 
@@ -97,62 +98,30 @@ Module MainFunctions
 
     Function Download(ByVal url As String)
 
-        '定义一个WinHttpRequest类的实体变量
-        Dim http = New WinHttp.WinHttpRequest
+        'Dim http = New WinHttp.WinHttpRequest
 
-        '调用Open函数，传入参数为请求方法，URL
-        '如果是get方法,URL由baseurl+？+字段名+&+字段值构成
-        http.Open("GET", url, False)
-
-        '发送请求
-        http.Send()
-
-        '请求结果为http.ResponseText
-        Return http.ResponseText
+        'http.Option(WinHttpRequestOption.WinHttpRequestOption_SslErrorIgnoreFlags) = WinHttpRequestSslErrorFlags.SslErrorFlag_Ignore_All
 
 
+        'http.Open("GET", url, False)
+
+        'http.Send()
+
+        '请求结果
+        'Return http.ResponseText
+        Dim inStream As StreamReader
+        Dim webRequest As WebRequest
+        Dim webresponse As WebResponse
+        webRequest = WebRequest.Create(url)
+        webresponse = webRequest.GetResponse()
+        inStream = New StreamReader(webresponse.GetResponseStream(), Encoding.UTF8)
+        Return inStream.ReadToEnd
 
     End Function
 
 
 
-    'Sub RunCmd(ByVal cmd As String, ByVal arg As String, ByVal out As TextBox)
-    'Dim oProcess As New Process()
-    'Dim oStartInfo As New ProcessStartInfo(cmd, arg)
-    'oStartInfo.UseShellExecute = False
-    'oStartInfo.RedirectStandardOutput = True
-    'oProcess.StartInfo = oStartInfo
-    'oProcess.Start()
 
-    'Dim sOutput As String
-    'Using oStreamReader As System.IO.StreamReader = oProcess.StandardOutput
-    'While True
-    'out.Text = out.Text + vbCrLf + oStreamReader.ReadToEnd()
-    'Threading.Thread.Sleep(100)
-    'End While
-    'End Using
-
-    'Using Process As Process = New Process()
-
-    'Process.StartInfo.FileName = cmd
-    '  Process.StartInfo.Arguments = arg
-    '    Process.StartInfo.UseShellExecute = False
-    '      Process.StartInfo.RedirectStandardOutput = True
-
-
-    'Process.Start()
-    '
-    ' Synchronously read the standard output of the spawned process. 
-    'Dim reader As StreamReader = Process.StandardOutput
-    '  Dim output As String = reader.ReadToEnd()
-
-    ' Write the redirected output to this application's window.
-    'Console.WriteLine(output)
-    'out.Text = out.Text + vbCrLf + output
-
-    'Process.WaitForExit()
-    'End Using
-    'End Sub
 
 
     '获取MD5
@@ -178,3 +147,5 @@ Module MainFunctions
 
     End Function
 End Module
+
+

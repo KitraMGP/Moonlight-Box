@@ -25,12 +25,13 @@ Partial Class UpdateDialog
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UpdateDialog))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DownloadUpdate = New System.Windows.Forms.Button()
+        Me.ChangeLogBox = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(96, 19)
+        Me.Label1.Location = New System.Drawing.Point(36, 23)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(65, 12)
         Me.Label1.TabIndex = 0
@@ -38,18 +39,30 @@ Partial Class UpdateDialog
         '
         'DownloadUpdate
         '
-        Me.DownloadUpdate.Location = New System.Drawing.Point(86, 57)
+        Me.DownloadUpdate.Location = New System.Drawing.Point(539, 294)
         Me.DownloadUpdate.Name = "DownloadUpdate"
         Me.DownloadUpdate.Size = New System.Drawing.Size(75, 23)
         Me.DownloadUpdate.TabIndex = 1
         Me.DownloadUpdate.Text = "下载"
         Me.DownloadUpdate.UseVisualStyleBackColor = True
         '
+        'ChangeLogBox
+        '
+        Me.ChangeLogBox.AcceptsReturn = True
+        Me.ChangeLogBox.Location = New System.Drawing.Point(38, 51)
+        Me.ChangeLogBox.MaxLength = 9999999
+        Me.ChangeLogBox.Multiline = True
+        Me.ChangeLogBox.Name = "ChangeLogBox"
+        Me.ChangeLogBox.ReadOnly = True
+        Me.ChangeLogBox.Size = New System.Drawing.Size(576, 227)
+        Me.ChangeLogBox.TabIndex = 2
+        '
         'UpdateDialog
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(278, 103)
+        Me.ClientSize = New System.Drawing.Size(636, 329)
+        Me.Controls.Add(Me.ChangeLogBox)
         Me.Controls.Add(Me.DownloadUpdate)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
@@ -67,4 +80,5 @@ Partial Class UpdateDialog
 
     Friend WithEvents Label1 As Label
     Friend WithEvents DownloadUpdate As Button
+    Friend WithEvents ChangeLogBox As TextBox
 End Class

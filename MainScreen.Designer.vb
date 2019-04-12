@@ -62,12 +62,12 @@ Partial Class MainScreen
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel3_Desc = New System.Windows.Forms.Label()
         Me.Panel_Settings = New System.Windows.Forms.Panel()
+        Me.GetNewVersion = New System.Windows.Forms.Button()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel4_Desc = New System.Windows.Forms.Label()
-        Me.GetNewVersion = New System.Windows.Forms.Button()
         CType(Me.Main_Close, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_Win, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_MMedia, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -581,6 +581,15 @@ Partial Class MainScreen
         Me.Panel_Settings.TabIndex = 13
         Me.Panel_Settings.Visible = False
         '
+        'GetNewVersion
+        '
+        Me.GetNewVersion.Location = New System.Drawing.Point(205, 71)
+        Me.GetNewVersion.Name = "GetNewVersion"
+        Me.GetNewVersion.Size = New System.Drawing.Size(75, 23)
+        Me.GetNewVersion.TabIndex = 7
+        Me.GetNewVersion.Text = "检查更新"
+        Me.GetNewVersion.UseVisualStyleBackColor = True
+        '
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
@@ -612,7 +621,7 @@ Partial Class MainScreen
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(194, 54)
         Me.Label2.TabIndex = 4
-        Me.Label2.Text = "版本：1.0.0" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "作者：zi_jing"
+        Me.Label2.Text = "版本：1.0.1" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "作者：zi_jing"
         '
         'PictureBox2
         '
@@ -634,15 +643,6 @@ Partial Class MainScreen
         Me.Panel4_Desc.Size = New System.Drawing.Size(87, 35)
         Me.Panel4_Desc.TabIndex = 2
         Me.Panel4_Desc.Text = "设置"
-        '
-        'GetNewVersion
-        '
-        Me.GetNewVersion.Location = New System.Drawing.Point(205, 71)
-        Me.GetNewVersion.Name = "GetNewVersion"
-        Me.GetNewVersion.Size = New System.Drawing.Size(75, 23)
-        Me.GetNewVersion.TabIndex = 7
-        Me.GetNewVersion.Text = "检查更新"
-        Me.GetNewVersion.UseVisualStyleBackColor = True
         '
         'MainScreen
         '

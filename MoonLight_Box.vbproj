@@ -26,7 +26,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -146,6 +146,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="UpdateChecking.Designer.vb">
+      <DependentUpon>UpdateChecking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateChecking.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UpdateDialog.Designer.vb">
       <DependentUpon>UpdateDialog.vb</DependentUpon>
     </Compile>
@@ -192,6 +198,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateChecking.resx">
+      <DependentUpon>UpdateChecking.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateDialog.resx">
       <DependentUpon>UpdateDialog.vb</DependentUpon>
@@ -338,17 +347,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="resources\7za.exe" />
-  </ItemGroup>
-  <ItemGroup>
-    <COMReference Include="WinHttp">
-      <Guid>{662901FC-6951-4854-9EB2-D9A2570F2B2E}</Guid>
-      <VersionMajor>5</VersionMajor>
-      <VersionMinor>1</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>tlbimp</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

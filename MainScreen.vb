@@ -286,19 +286,8 @@
     Private Sub GetNewVersion_Click(sender As Object, e As EventArgs) Handles GetNewVersion.Click
         Dim fs = My.Computer.FileSystem
         Dim temp = fs.SpecialDirectories.Temp
-        '获取版本信息
-        Dim version As String
-        Try
-            version = Download("https://github.com/zi-jing/MoonlightBox-UpdateCheck/raw/master/version.txt")
 
-            'MsgBox(version)
-            If version.Equals("1.0.0") = True Then
-                MsgBox("已是最新版本。")
-            Else
-                UpdateDialog.Show()
-            End If
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
+        UpdateChecking.Show()
+
     End Sub
 End Class
