@@ -110,6 +110,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="CRC32.Designer.vb">
+      <DependentUpon>CRC32.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CRC32.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crypt.vb" />
     <Compile Include="FormGraphics.Designer.vb">
       <DependentUpon>FormGraphics.vb</DependentUpon>
     </Compile>
@@ -133,6 +140,18 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SHA1.Designer.vb">
+      <DependentUpon>SHA1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SHA1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SHA256.Designer.vb">
+      <DependentUpon>SHA256.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SHA256.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="StartScreen.vb">
       <SubType>Form</SubType>
@@ -189,11 +208,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CRC32.resx">
+      <DependentUpon>CRC32.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainScreen.resx">
       <DependentUpon>MainScreen.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MD5.resx">
       <DependentUpon>MD5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SHA1.resx">
+      <DependentUpon>SHA1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SHA256.resx">
+      <DependentUpon>SHA256.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StartScreen.resx">
       <DependentUpon>StartScreen.vb</DependentUpon>

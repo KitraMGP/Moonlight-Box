@@ -279,4 +279,16 @@ Public Class MainScreen
     Private Sub MainScreen_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         FormFade("out", Me)
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        SHA1.Show()
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        SHA256.Show()
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        CRC32.Show()
+    End Sub
 End Class

@@ -57,10 +57,6 @@ Partial Class MD5
         Me.GetMD5_Explore.Text = "浏览"
         Me.GetMD5_Explore.UseVisualStyleBackColor = True
         '
-        'GetMD5_OpenFile
-        '
-        Me.GetMD5_OpenFile.FileName = "OpenFileDialog1"
-        '
         'Label2
         '
         Me.Label2.AutoSize = True

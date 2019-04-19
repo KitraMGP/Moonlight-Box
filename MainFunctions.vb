@@ -1,6 +1,5 @@
 ﻿Imports System.IO
 Imports System.Net
-Imports System.Security.Cryptography
 Imports System.Text
 
 Module MainFunctions
@@ -123,28 +122,7 @@ Module MainFunctions
 
 
 
-    '获取MD5
-    Function GetMD5(ByVal strSource As String) As String
-        Dim result As String = ""
 
-        Try
-
-            Dim fstream As New FileStream(strSource, FileMode.Open, FileAccess.Read)
-            Dim dataToHash(fstream.Length - 1) As Byte
-            fstream.Read(dataToHash, 0, fstream.Length)
-            fstream.Close()
-            Dim hashvalue As Byte() = CType(CryptoConfig.CreateFromName("MD5"), HashAlgorithm).ComputeHash(dataToHash)
-            Dim i As Integer
-            For i = 0 To hashvalue.Length - 1
-                result += Microsoft.VisualBasic.Right("00" + Hex(hashvalue(i)).ToLower, 2)
-            Next
-            Return result
-        Catch ex As Exception
-
-            Return result
-        End Try
-
-    End Function
 End Module
 
 

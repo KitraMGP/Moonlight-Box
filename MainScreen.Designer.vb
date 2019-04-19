@@ -58,6 +58,7 @@ Partial Class MainScreen
         Me.Panel2_Icon = New System.Windows.Forms.PictureBox()
         Me.Panel2_Desc = New System.Windows.Forms.Label()
         Me.Panel_Others = New System.Windows.Forms.Panel()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel3_Desc = New System.Windows.Forms.Label()
@@ -68,7 +69,8 @@ Partial Class MainScreen
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel4_Desc = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
         CType(Me.Main_Close, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_Win, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_MMedia, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -524,6 +526,8 @@ Partial Class MainScreen
         'Panel_Others
         '
         Me.Panel_Others.BackColor = System.Drawing.Color.Transparent
+        Me.Panel_Others.Controls.Add(Me.Button5)
+        Me.Panel_Others.Controls.Add(Me.Button4)
         Me.Panel_Others.Controls.Add(Me.Button3)
         Me.Panel_Others.Controls.Add(Me.Button1)
         Me.Panel_Others.Controls.Add(Me.PictureBox1)
@@ -534,13 +538,26 @@ Partial Class MainScreen
         Me.Panel_Others.TabIndex = 12
         Me.Panel_Others.Visible = False
         '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button3.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Button3.ForeColor = System.Drawing.Color.White
+        Me.Button3.Location = New System.Drawing.Point(337, 71)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(275, 60)
+        Me.Button3.TabIndex = 7
+        Me.Button3.Text = "SHA1计算"
+        Me.Button3.UseVisualStyleBackColor = False
+        '
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(17, 68)
+        Me.Button1.Location = New System.Drawing.Point(17, 71)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(275, 60)
         Me.Button1.TabIndex = 6
@@ -646,18 +663,31 @@ Partial Class MainScreen
         Me.Panel4_Desc.TabIndex = 2
         Me.Panel4_Desc.Text = "设置"
         '
-        'Button3
+        'Button4
         '
-        Me.Button3.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button3.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(337, 71)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(275, 60)
-        Me.Button3.TabIndex = 7
-        Me.Button3.Text = "SHA1计算"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.Button4.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button4.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Button4.ForeColor = System.Drawing.Color.White
+        Me.Button4.Location = New System.Drawing.Point(17, 149)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(275, 60)
+        Me.Button4.TabIndex = 8
+        Me.Button4.Text = "SHA256计算"
+        Me.Button4.UseVisualStyleBackColor = False
+        '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button5.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Button5.ForeColor = System.Drawing.Color.White
+        Me.Button5.Location = New System.Drawing.Point(337, 149)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(275, 60)
+        Me.Button5.TabIndex = 9
+        Me.Button5.Text = "CRC32计算"
+        Me.Button5.UseVisualStyleBackColor = False
         '
         'MainScreen
         '
@@ -747,4 +777,6 @@ Partial Class MainScreen
     Friend WithEvents Panel4_Desc As Label
     Friend WithEvents GetNewVersion As Button
     Friend WithEvents Button3 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button5 As Button
 End Class

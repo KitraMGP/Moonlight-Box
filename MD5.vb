@@ -5,6 +5,7 @@
     End Sub
 
     Private Sub GetMD5_Run_Click(sender As Object, e As EventArgs) Handles GetMD5_Run.Click
-        GetMD5_Result.Text = GetMD5(GetMD5_File.Text)
+        Dim Crypt = New Crypt
+        GetMD5_Result.Text = Crypt.GetMD5(GetMD5_File.Text)
     End Sub
 End Class
