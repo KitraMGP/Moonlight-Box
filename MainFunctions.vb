@@ -2,28 +2,27 @@
 Imports System.Net
 Imports System.Security.Cryptography
 Imports System.Text
-Imports WinHttp
 
 Module MainFunctions
 
 
 
     '窗口淡入淡出
-    Sub FormFade(ByVal FType)
+    Sub FormFade(ByVal FType As String, ByVal Form As Form)
         Select Case FType
             Case ("in")
                 Dim FadeCount As Integer
                 For FadeCount = 10 To 100 Step 10
-                    Start_Screen.Opacity = FadeCount / 100
-                    Start_Screen.Refresh()
-                    Threading.Thread.Sleep(30)
+                    Form.Opacity = FadeCount / 100
+                    'Form.Refresh()
+                    Delay(30)
                 Next
             Case ("out")
                 Dim FadeCount As Integer
                 For FadeCount = 90 To 0 Step -10
-                    Start_Screen.Opacity = FadeCount / 100
-                    Start_Screen.Refresh()
-                    Threading.Thread.Sleep(30)
+                    Form.Opacity = FadeCount / 100
+                    'Form.Refresh()
+                    Delay(30)
                 Next
         End Select
 

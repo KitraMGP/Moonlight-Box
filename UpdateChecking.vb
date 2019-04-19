@@ -1,6 +1,7 @@
 ﻿Public Class UpdateChecking
     Private Sub UpdateChecking_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        Me.Show()
         '获取版本信息
         Dim version As String
 

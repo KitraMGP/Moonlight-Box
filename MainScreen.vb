@@ -1,4 +1,6 @@
-﻿Public Class MainScreen
+﻿Imports System.ComponentModel
+
+Public Class MainScreen
 
     '移动窗口
     Private IsFormBeingDragged As Boolean = False
@@ -10,8 +12,9 @@
         If e.Button = MouseButtons.Left Then
             IsFormBeingDragged = True
             MouseDownX = e.X
-            MouseDownY = e.Y
-        End If
+                MouseDownY = e.Y
+
+            End If
     End Sub
 
     Private Sub Start_Screen_MouseUp(ByVal sender As Object, ByVal e As MouseEventArgs) Handles MyBase.MouseUp
@@ -36,6 +39,7 @@
 
     Private Sub MainScreen_Load(sender As Object, e As EventArgs) Handles Me.Load
 
+        '设置字体
         'SetFont(Panel_Win_Desc, 26)
         'SetFont(Panel2_Desc, 26)
         'SetFont(Panel3_Desc, 26)
@@ -47,28 +51,9 @@
         'Dim temp = fs.SpecialDirectories.Temp
         'Dim fontpath As String = temp + "/MoonLight_Box/moonlight_toolbox_font.ttf"
 
-        'Dim g As Graphics = Start_Screen.CreateGraphics
-
-        'Dim PFC As New Drawing.Text.PrivateFontCollection() '私有字符集和
-        'PFC.AddFontFile(fontpath) '载入一个字符文件
-
-        'Dim FFS() As FontFamily = PFC.Families
-        'LinkLabel1.Font = New Font(FFS(0), 20)
+        FormFade("in", Me)
 
 
-        'Dim g As Graphics = Me.CreateGraphics()
-        'Dim fs = My.Computer.FileSystem
-        'Dim temp = fs.SpecialDirectories.Temp
-        'Dim fontpath As String = temp + "/moonlight_toolbox_font.ttf"
-        '
-        'Dim brush As New SolidBrush(Color.White)
-        'Dim PFC As New Drawing.Text.PrivateFontCollection() '私有字符集和
-        'PFC.AddFontFile(fontpath) '载入一个字符文件
-        '
-        'Dim FFS() As FontFamily = PFC.Families
-        '
-        'Dim font As Font = New Font(FFS(0), 10, FontStyle.Regular)
-        'g.DrawString("233", font, brush, 1, 1)
 
 
     End Sub
@@ -289,5 +274,9 @@
 
         UpdateChecking.Show()
 
+    End Sub
+
+    Private Sub MainScreen_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        FormFade("out", Me)
     End Sub
 End Class

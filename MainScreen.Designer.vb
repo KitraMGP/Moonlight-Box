@@ -68,6 +68,7 @@ Partial Class MainScreen
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel4_Desc = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
         CType(Me.Main_Close, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_Win, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_MMedia, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -523,6 +524,7 @@ Partial Class MainScreen
         'Panel_Others
         '
         Me.Panel_Others.BackColor = System.Drawing.Color.Transparent
+        Me.Panel_Others.Controls.Add(Me.Button3)
         Me.Panel_Others.Controls.Add(Me.Button1)
         Me.Panel_Others.Controls.Add(Me.PictureBox1)
         Me.Panel_Others.Controls.Add(Me.Panel3_Desc)
@@ -644,6 +646,19 @@ Partial Class MainScreen
         Me.Panel4_Desc.TabIndex = 2
         Me.Panel4_Desc.Text = "设置"
         '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button3.Font = New System.Drawing.Font("锐字锐线俏皮简1.0", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Button3.ForeColor = System.Drawing.Color.White
+        Me.Button3.Location = New System.Drawing.Point(337, 71)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(275, 60)
+        Me.Button3.TabIndex = 7
+        Me.Button3.Text = "SHA1计算"
+        Me.Button3.UseVisualStyleBackColor = False
+        '
         'MainScreen
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
@@ -652,10 +667,10 @@ Partial Class MainScreen
         Me.ClientSize = New System.Drawing.Size(944, 501)
         Me.Controls.Add(Me.ButtonsPanel)
         Me.Controls.Add(Me.Main_Close)
-        Me.Controls.Add(Me.Panel_Settings)
         Me.Controls.Add(Me.Panel_Others)
         Me.Controls.Add(Me.Panel_MMedia)
         Me.Controls.Add(Me.Panel_Win)
+        Me.Controls.Add(Me.Panel_Settings)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -731,4 +746,5 @@ Partial Class MainScreen
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Panel4_Desc As Label
     Friend WithEvents GetNewVersion As Button
+    Friend WithEvents Button3 As Button
 End Class

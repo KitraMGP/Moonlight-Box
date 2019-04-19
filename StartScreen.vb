@@ -1,4 +1,6 @@
 ﻿
+Imports System.ComponentModel
+
 Public Class Start_Screen
 
 
@@ -7,6 +9,8 @@ Public Class Start_Screen
     '主界面启动
 
     Private Sub Start_Screen_Load(sender As Object, e As EventArgs) Handles Me.Load
+
+        Me.Show()
 
         '防止进程重复运行
         If UBound(Diagnostics.Process.GetProcessesByName(
@@ -17,7 +21,11 @@ Diagnostics.Process.GetCurrentProcess.ProcessName)) > 0 Then
 
 
 
-        FormFade("in") '窗体打开时淡入
+        'FormFade("in", Me) '窗体打开时淡入
+
+        Dim FormGraphics As New FormGraphics
+        FormGraphics.FormMove("in", Me)
+
         'Delay(300)
         Start_Progress.Value = 10
         Me.Start_Status.Text = "正在提取资源文件..."
@@ -35,8 +43,13 @@ Diagnostics.Process.GetCurrentProcess.ProcessName)) > 0 Then
         MainScreen.Show()
         Close()
 
+
+
     End Sub
 
-
+    Private Sub Start_Screen_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        Dim FormGraphics As New FormGraphics
+        FormGraphics.FormMove("out", Me)
+    End Sub
 End Class
 
