@@ -5,4 +5,4 @@
 
 # 注意：
 
-若要下载二进制文件，请前往https://github.com/zi-jing/MoonlightBox-UpdateCheck仓库
+~~若要下载二进制文件，请前往https://github.com/zi-jing/MoonlightBox-UpdateCheck仓库~~
