@@ -38,7 +38,7 @@
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>run\</OutputPath>
     <DocumentationFile>MoonLight_Box.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
@@ -264,8 +264,8 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-    <None Include="resources\ffmpeg.zip" />
-    <None Include="resources\锐字锐线俏皮简1.0.TTF" />
+    <None Include="resources\ffmpeg.7z" />
+    <None Include="resources\ipc.bat" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
@@ -304,6 +304,7 @@
     <None Include="resources\icon.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="resources\runffmpeg.bat" />
     <None Include="resources\startbg.png" />
   </ItemGroup>
   <ItemGroup>
@@ -379,7 +380,7 @@
     <None Include="resources\btnbg_2.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="resources\7za.exe" />
+    <None Include="resources\7zr.exe" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

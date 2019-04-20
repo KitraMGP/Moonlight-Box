@@ -13,7 +13,7 @@ Public Class UpdateChecking
             version = Download("https://raw.githubusercontent.com/zi-jing/MoonlightBox-UpdateCheck/master/version.txt")
 
             'MsgBox(version)
-            If version.Equals("1.0.1") = True Then
+            If version.Equals("1.0.2") = True Then
                 MsgBox("已是最新版本。")
                 Close()
 

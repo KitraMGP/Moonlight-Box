@@ -50,39 +50,48 @@ Module MainFunctions
     'End Sub
 
     '提取资源文件
-    Sub ExtractResources()
-        Dim fs = My.Computer.FileSystem
-        Dim temp = fs.SpecialDirectories.Temp
-        Dim resources As System.Resources.ResourceManager = My.Resources.ResourceManager
-        Dim b1() As Byte = resources.GetObject("font1")
-        If fs.DirectoryExists(temp + "/MoonLight_Box") = True Then
-            fs.DeleteDirectory(temp + "/MoonLight_Box", FileIO.DeleteDirectoryOption.DeleteAllContents)
-        End If
-        fs.CreateDirectory(temp + "/MoonLight_Box")
-        'Dim s1 As IO.Stream = File.Create(temp + "/MoonLight_Box/moonlight_toolbox_font.ttf") '要保存的路径
-        's1.Write(b1, 0, b1.Length)
-        's1.Close()
+    'Sub ExtractResources()
+    '    Try
+    '        Dim fs = My.Computer.FileSystem
+    '        Dim temp = fs.SpecialDirectories.Temp
+    '        Dim resources As System.Resources.ResourceManager = My.Resources.ResourceManager
+    '        'Dim b1() As Byte = resources.GetObject("font1")
+    '        If fs.DirectoryExists(temp + "/MoonLight_Box") = True Then
+    '            fs.DeleteDirectory(temp + "/MoonLight_Box", FileIO.DeleteDirectoryOption.DeleteAllContents)
+    '        End If
+    '        fs.CreateDirectory(temp + "/MoonLight_Box")
+    '        'Dim s1 As IO.Stream = File.Create(temp + "/MoonLight_Box/moonlight_toolbox_font.ttf") '要保存的路径
+    '        's1.Write(b1, 0, b1.Length)
+    '        's1.Close()
 
-        Dim b2() As Byte = resources.GetObject("_7za")
-        Dim s2 As IO.Stream = File.Create(temp + "/MoonLight_Box/7za.exe")
+    '        Dim b2() As Byte = resources.GetObject("_7zr")
+    '        Dim s2 As IO.Stream = File.Create(temp + "/MoonLight_Box/7zr.exe")
 
-        s2.Write(b2, 0, b2.Length)
-        s2.Close()
+    '        s2.Write(b2, 0, b2.Length)
+    '        s2.Close()
 
-        Dim b3() As Byte = resources.GetObject("ffmpeg")
-        Dim s3 As IO.Stream = File.Create(temp + "/MoonLight_Box/ffmpeg.zip")
-        s3.Write(b3, 0, b3.Length)
-        s3.Close()
+    '        Dim b3() As Byte = resources.GetObject("ffmpeg")
+    '        Dim s3 As IO.Stream = File.Create(temp + "/MoonLight_Box/ffmpeg.7z")
+    '        s3.Write(b3, 0, b3.Length)
+    '        s3.Close()
 
-        Dim b4() As Byte = resources.GetObject("ipc")
-        Dim s4 As IO.Stream = File.Create(temp + "/MoonLight_Box/ipc.bat")
-        s4.Write(b4, 0, b4.Length)
-        s4.Close()
+    '        Dim b4() As Byte = resources.GetObject("ipc")
+    '        Dim s4 As IO.Stream = File.Create(temp + "/MoonLight_Box/ipc.bat")
+    '        s4.Write(b4, 0, b4.Length)
+    '        s4.Close()
 
+    '        Dim b5() As Byte = resources.GetObject("runffmpeg")
+    '        Dim s5 As IO.Stream = File.Create(temp + "/MoonLight_Box/runffmpeg.bat")
+    '        s5.Write(b5, 0, b5.Length)
+    '        s5.Close()
 
-        Shell(fs.SpecialDirectories.Temp + "/MoonLight_Box/7za.exe x -o" + fs.SpecialDirectories.Temp + "/MoonLight_Box/ " + fs.SpecialDirectories.Temp + "/MoonLight_Box/ffmpeg.zip", AppWinStyle.MinimizedFocus)
-        Delay(2000)
-    End Sub
+    '        'Delay(3000)
+    '        Shell(fs.SpecialDirectories.Temp + "/MoonLight_Box/7zr.exe x -o" + fs.SpecialDirectories.Temp + "/MoonLight_Box/ " + fs.SpecialDirectories.Temp + "/MoonLight_Box/ffmpeg.7z", AppWinStyle.MinimizedFocus)
+    '        Delay(2000)
+    '    Catch ex As Exception
+    '        ShowErr(ex, "未知")
+    '    End Try
+    'End Sub
 
     '延时
     Sub Delay(ByVal Interval As Integer)

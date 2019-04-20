@@ -11,10 +11,14 @@
 
     '开始转换
     Private Sub VidCut_Start_Click(sender As Object, e As EventArgs) Handles VidCut_Start.Click
-        VidCut_Cmd.Text = "ffmpeg -i " + VidCut_Src.Text + " -ss " + VidCut_StartTime.Text + " -t " + VidCut_KeepTime.Text + " -bsf:v h264_mp4toannexb -vcodec copy -acodec copy " + VidCut_Out.Text
-        Dim fs = My.Computer.FileSystem
-        Dim temp = fs.SpecialDirectories.Temp
-        Shell(temp + "/MoonLight_Box/" + VidCut_Cmd.Text, AppWinStyle.NormalFocus)
-        'RunCmd("cmd", "", VidCut_Log)
+        Try
+            VidCut_Cmd.Text = "ffmpeg -i " + VidCut_Src.Text + " -ss " + VidCut_StartTime.Text + " -t " + VidCut_KeepTime.Text + " -bsf:v h264_mp4toannexb -vcodec copy -acodec copy " + VidCut_Out.Text
+            Dim fs = My.Computer.FileSystem
+            Dim temp = fs.SpecialDirectories.Temp
+            Shell(Application.StartupPath + "/" + VidCut_Cmd.Text, AppWinStyle.NormalFocus)
+            'RunCmd("cmd", "", VidCut_Log)
+        Catch ex As Exception
+            ShowErr(ex, "文件缺失")
+        End Try
     End Sub
 End Class

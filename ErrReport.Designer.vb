@@ -37,9 +37,9 @@ Partial Class ErrReport
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(33, 19)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(125, 12)
+        Me.Label1.Size = New System.Drawing.Size(323, 12)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "程序运行时出现异常！"
+        Me.Label1.Text = "程序运行时出现异常！请到该项目的Github仓库发送issue！"
         '
         'Label2
         '
@@ -54,6 +54,7 @@ Partial Class ErrReport
         '
         Me.ErrorName.Location = New System.Drawing.Point(107, 44)
         Me.ErrorName.Name = "ErrorName"
+        Me.ErrorName.ReadOnly = True
         Me.ErrorName.Size = New System.Drawing.Size(546, 21)
         Me.ErrorName.TabIndex = 2
         '
@@ -61,6 +62,7 @@ Partial Class ErrReport
         '
         Me.ErrorReason.Location = New System.Drawing.Point(107, 81)
         Me.ErrorReason.Name = "ErrorReason"
+        Me.ErrorReason.ReadOnly = True
         Me.ErrorReason.Size = New System.Drawing.Size(546, 21)
         Me.ErrorReason.TabIndex = 3
         '

@@ -651,7 +651,7 @@ Partial Class MainScreen
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(194, 54)
         Me.Label2.TabIndex = 4
-        Me.Label2.Text = "版本：1.0.1" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "作者：zi_jing"
+        Me.Label2.Text = "版本：1.0.2" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "作者：zi_jing"
         '
         'PictureBox2
         '

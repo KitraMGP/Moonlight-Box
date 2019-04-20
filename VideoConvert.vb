@@ -17,17 +17,22 @@
 
     '开始转换
     Private Sub VidConvert_Start_Click(sender As Object, e As EventArgs) Handles VidConvert_Start.Click
+        Try
 
+            VidConvert_Cmd.Text = "ffmpeg -i " + VidConvert_Src.Text + " -r " + VidConvert_FPS.Text + " -b:v " + VidConvert_Kbps.Text + "k -bufsize " + VidConvert_Kbps.Text + "k -maxrate " + VidConvert_Kbps.Text + "k " + VidConvert_Out.Text
+            Dim fs = My.Computer.FileSystem
+            Dim temp = fs.SpecialDirectories.Temp
 
-        VidConvert_Cmd.Text = "ffmpeg -i " + VidConvert_Src.Text + " -r " + VidConvert_FPS.Text + " -b:v " + VidConvert_Kbps.Text + "k -bufsize " + VidConvert_Kbps.Text + "k -maxrate " + VidConvert_Kbps.Text + "k " + VidConvert_Out.Text
-        Dim fs = My.Computer.FileSystem
-        Dim temp = fs.SpecialDirectories.Temp
+            'Shell(temp + " / " + VidConvert_Cmd.Text, AppWinStyle.NormalFocus)
+            'Shell(temp + "/" + VidConvert_Cmd.Text, AppWinStyle.NormalFocus)
+            'RunCmd(temp + "\MoonLight_Box\ffmpeg.exe", "-i " + VidConvert_Src.Text + " -r " + VidConvert_FPS.Text + " -b:v " + VidConvert_Kbps.Text + "k -bufsize " + VidConvert_Kbps.Text + "k -maxrate " + VidConvert_Kbps.Text + "k " + VidConvert_Out.Text, VidConvert_Log)
 
-        'Shell(temp + " / " + VidConvert_Cmd.Text, AppWinStyle.NormalFocus)
-        'Shell(temp + "/" + VidConvert_Cmd.Text, AppWinStyle.NormalFocus)
-        'RunCmd(temp + "\MoonLight_Box\ffmpeg.exe", "-i " + VidConvert_Src.Text + " -r " + VidConvert_FPS.Text + " -b:v " + VidConvert_Kbps.Text + "k -bufsize " + VidConvert_Kbps.Text + "k -maxrate " + VidConvert_Kbps.Text + "k " + VidConvert_Out.Text, VidConvert_Log)
-
-        Shell(temp + "/MoonLight_Box/" + VidConvert_Cmd.Text, AppWinStyle.NormalFocus)
+            'Shell(temp + "/MoonLight_Box/" + VidConvert_Cmd.Text, AppWinStyle.NormalFocus)
+            Shell(Application.StartupPath + "/" + VidConvert_Cmd.Text, AppWinStyle.NormalFocus)
+            'MsgBox(Application.StartupPath)
+        Catch ex As Exception
+            ShowErr(ex, "文件缺失")
+        End Try
     End Sub
 
 End Class

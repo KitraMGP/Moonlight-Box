@@ -9,12 +9,15 @@
 
     '播放
     Private Sub VidPlay_Play_Click(sender As Object, e As EventArgs) Handles VidPlay_Play.Click
+        Try
+            Dim fs = My.Computer.FileSystem
+            Dim temp = fs.SpecialDirectories.Temp
 
-        Dim fs = My.Computer.FileSystem
-        Dim temp = fs.SpecialDirectories.Temp
 
-
-        Shell(temp + "/MoonLight_Box/ffplay " + VidPlay_Src.Text, AppWinStyle.NormalFocus)
+            Shell(Application.StartupPath + "/ffplay " + VidPlay_Src.Text, AppWinStyle.NormalFocus)
+        Catch ex As Exception
+            ShowErr(ex, "文件缺失")
+        End Try
     End Sub
 
 

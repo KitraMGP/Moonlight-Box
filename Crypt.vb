@@ -21,7 +21,7 @@ Public Class Crypt
             Return result
         Catch ex As Exception
 
-            MsgBox(ex.Message)
+            ShowErr(ex, "未知")
             Return result
         End Try
 
@@ -46,7 +46,7 @@ Public Class Crypt
             Return result
         Catch ex As Exception
 
-            MsgBox(ex.Message)
+            ShowErr(ex, "未知")
             Return result
         End Try
 
@@ -71,7 +71,7 @@ Public Class Crypt
             Return result
         Catch ex As Exception
 
-            MsgBox(ex.Message)
+            ShowErr(ex, "未知")
             Return result
         End Try
 
@@ -96,7 +96,7 @@ Public Class Crypt
             Return result
         Catch ex As Exception
 
-            MsgBox(ex.Message)
+            ShowErr(ex, "未知")
             Return result
         End Try
 

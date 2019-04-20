@@ -221,7 +221,7 @@ Public Class MainScreen
     Private Sub Win_IPConfig_Click(sender As Object, e As EventArgs) Handles Win_IPConfig.Click
         Dim fs = My.Computer.FileSystem
         Dim temp = fs.SpecialDirectories.Temp
-        Shell(temp + "/MoonLight_Box/ipc.bat", AppWinStyle.NormalFocus)
+        Shell(Application.StartupPath + "/ipc.bat", AppWinStyle.NormalFocus)
     End Sub
 
     Private Sub Win_Securily_Click(sender As Object, e As EventArgs) Handles Win_Securily.Click
@@ -253,7 +253,8 @@ Public Class MainScreen
     End Sub
 
     Private Sub Vid_FFMpeg_Click(sender As Object, e As EventArgs) Handles Vid_FFMpeg.Click
-        VideoRunCmd.Show()
+        'VideoRunCmd.Show()
+        Shell(Application.StartupPath + "/runffmpeg.bat", AppWinStyle.NormalFocus)
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
