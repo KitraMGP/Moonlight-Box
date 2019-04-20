@@ -24,6 +24,8 @@ Partial Class UpdateChecking
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UpdateChecking))
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.ChkUpdProcess = New System.ComponentModel.BackgroundWorker()
+        Me.CancelUpdate = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -35,11 +37,26 @@ Partial Class UpdateChecking
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "正在检查更新..."
         '
+        'ChkUpdProcess
+        '
+        Me.ChkUpdProcess.WorkerReportsProgress = True
+        Me.ChkUpdProcess.WorkerSupportsCancellation = True
+        '
+        'CancelUpdate
+        '
+        Me.CancelUpdate.Location = New System.Drawing.Point(58, 44)
+        Me.CancelUpdate.Name = "CancelUpdate"
+        Me.CancelUpdate.Size = New System.Drawing.Size(75, 23)
+        Me.CancelUpdate.TabIndex = 1
+        Me.CancelUpdate.Text = "取消"
+        Me.CancelUpdate.UseVisualStyleBackColor = True
+        '
         'UpdateChecking
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(214, 58)
+        Me.ClientSize = New System.Drawing.Size(214, 79)
+        Me.Controls.Add(Me.CancelUpdate)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -55,4 +72,6 @@ Partial Class UpdateChecking
     End Sub
 
     Friend WithEvents Label1 As Label
+    Friend WithEvents ChkUpdProcess As System.ComponentModel.BackgroundWorker
+    Friend WithEvents CancelUpdate As Button
 End Class

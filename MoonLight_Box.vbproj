@@ -111,6 +111,12 @@
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
     <Compile Include="Crypt.vb" />
+    <Compile Include="ErrReport.Designer.vb">
+      <DependentUpon>ErrReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ErrReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormGraphics.Designer.vb">
       <DependentUpon>FormGraphics.vb</DependentUpon>
     </Compile>
@@ -202,6 +208,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ErrReport.resx">
+      <DependentUpon>ErrReport.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainScreen.resx">
       <DependentUpon>MainScreen.vb</DependentUpon>
     </EmbeddedResource>

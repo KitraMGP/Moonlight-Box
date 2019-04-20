@@ -35,7 +35,7 @@ Module MainFunctions
     '
     'Dim g As Graphics = Start_Screen.CreateGraphics
 
-    'Dim PFC As New Drawing.Text.PrivateFontCollection() '私有字符集和
+    'Dim PFC As New Drawing.Text.PrivateFontCollection()
     '   PFC.AddFontFile(fontpath) '载入一个字符文件
 
     'Dim FFS() As FontFamily = PFC.Families
@@ -86,6 +86,7 @@ Module MainFunctions
 
     '延时
     Sub Delay(ByVal Interval As Integer)
+        '获取现在时间
         Dim __time As DateTime = DateTime.Now
         Dim __Span As Int64 = Interval * 10000  '因为时间是以100纳秒为单位
         While (DateTime.Now.Ticks - __time.Ticks < __Span)
@@ -94,19 +95,10 @@ Module MainFunctions
     End Sub
 
 
+    '获取网络上文件的内容
     Function Download(ByVal url As String)
 
-        'Dim http = New WinHttp.WinHttpRequest
 
-        'http.Option(WinHttpRequestOption.WinHttpRequestOption_SslErrorIgnoreFlags) = WinHttpRequestSslErrorFlags.SslErrorFlag_Ignore_All
-
-
-        'http.Open("GET", url, False)
-
-        'http.Send()
-
-        '请求结果
-        'Return http.ResponseText
         Dim inStream As StreamReader
         Dim webRequest As WebRequest
         Dim webresponse As WebResponse
@@ -118,7 +110,35 @@ Module MainFunctions
     End Function
 
 
+    '显示崩溃报告
+    Sub ShowErr(ByVal ex As Exception, ByVal advice As String)
 
+        Try
+            '生成崩溃报告
+            Dim ReportText As String = ("月光宝盒崩溃报告" +
+            vbCrLf +
+            "---------------------------" + vbCrLf +
+            "崩溃原因：" + ex.Message + vbCrLf +
+            "错误源：" + ex.Source + vbCrLf +
+            "出错位置：" + ex.StackTrace + vbCrLf +
+            "---------------------------" + vbCrLf +
+            "详细信息：" + ex.ToString + vbCrLf)
+
+            '显示崩溃报告
+            With ErrReport
+                .ErrorName.Text = ex.Message
+                .ErrorReason.Text = advice
+                .ErrReportText.Text = ReportText
+            End With
+
+            ErrReport.Show()
+
+        Catch ex2 As Exception
+
+            '虽然我觉得这基本上是不可能的，但还是加上更好
+            MsgBox(ex2.ToString, 0, "创建崩溃报告时出错")
+        End Try
+    End Sub
 
 
 

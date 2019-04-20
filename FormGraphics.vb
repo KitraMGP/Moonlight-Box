@@ -94,7 +94,7 @@
 
             '抛出异常
         Catch ex As Exception
-            MsgBox(ex.ToString)
+            ShowErr(ex, "未知")
 
         End Try
     End Sub
