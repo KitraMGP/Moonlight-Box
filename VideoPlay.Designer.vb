@@ -115,8 +115,10 @@ Partial Class VideoPlay
         Me.Controls.Add(Me.VidPlaySrc_Explore)
         Me.Controls.Add(Me.VidPlay_Src)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "VideoPlay"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "视频/直播播放"
         Me.ResumeLayout(False)
         Me.PerformLayout()

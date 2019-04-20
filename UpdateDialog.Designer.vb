@@ -65,7 +65,7 @@ Partial Class UpdateDialog
         Me.Controls.Add(Me.ChangeLogBox)
         Me.Controls.Add(Me.DownloadUpdate)
         Me.Controls.Add(Me.Label1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False

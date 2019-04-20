@@ -288,7 +288,5 @@ Public Class MainScreen
         SHA256.Show()
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        CRC32.Show()
-    End Sub
+
 End Class

@@ -110,12 +110,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="CRC32.Designer.vb">
-      <DependentUpon>CRC32.vb</DependentUpon>
-    </Compile>
-    <Compile Include="CRC32.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Crypt.vb" />
     <Compile Include="FormGraphics.Designer.vb">
       <DependentUpon>FormGraphics.vb</DependentUpon>
@@ -208,9 +202,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CRC32.resx">
-      <DependentUpon>CRC32.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MainScreen.resx">
       <DependentUpon>MainScreen.vb</DependentUpon>
     </EmbeddedResource>
