@@ -9,7 +9,7 @@ Imports System.Runtime.InteropServices
 '查看程序集特性的值
 
 <Assembly: AssemblyTitle("月光宝盒")>
-<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyDescription("月光宝盒主程序")>
 <Assembly: AssemblyCompany("游戏宇宙")>
 <Assembly: AssemblyProduct("月光宝盒")>
 <Assembly: AssemblyCopyright("游戏宇宙 (C) 2019")>

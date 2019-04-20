@@ -278,6 +278,7 @@ Public Class MainScreen
 
     Private Sub MainScreen_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         FormFade("out", Me)
+        End
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
