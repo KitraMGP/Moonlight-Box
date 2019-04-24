@@ -4,3 +4,11 @@ other_/
 .vs/
 *.sln
 MoonLight_Box.vbproj.user
+run/
+Installer/Debug.
+Installer/Release
+Installer/Debug/setup.exe
+Installer/Debug/Installer.msi
+run/MoonLight_Box.application
+run/MoonLight_Box.exe
+run/MoonLight_Box.exe.manifest

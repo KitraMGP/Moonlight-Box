@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MoonLight_Box.exe" size="41812960">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MoonLight_Box.exe" size="1192416">
       <assemblyIdentity name="MoonLight_Box" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ux6SsRWm+6ukQSCkQ0rsJy83ns8=</dsig:DigestValue>
+        <dsig:DigestValue>vvGjGTColJ2LTntVfiQHR1dj2n0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
