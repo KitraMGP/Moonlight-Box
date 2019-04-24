@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MoonLight_Box", "MoonLight_Box.vbproj", "{1971D1A3-7C7F-466B-85C6-C67F362DBFEC}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Installer", "Installer\Installer.vdproj", "{BD9317EC-737B-4CF0-8ECC-C3B798F1C091}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1971D1A3-7C7F-466B-85C6-C67F362DBFEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1971D1A3-7C7F-466B-85C6-C67F362DBFEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1971D1A3-7C7F-466B-85C6-C67F362DBFEC}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{1971D1A3-7C7F-466B-85C6-C67F362DBFEC}.Debug|ARM.Build.0 = Debug|Any CPU
+		{1971D1A3-7C7F-466B-85C6-C67F362DBFEC}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{1971D1A3-7C7F-466B-85C6-C67F362DBFEC}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{1971D1A3-7C7F-466B-85C6-C67F362DBFEC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1971D1A3-7C7F-466B-85C6-C67F362DBFEC}.Debug|x64.Build.0 = Debug|Any CPU
+		{1971D1A3-7C7F-466B-85C6-C67F362DBFEC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1971D1A3-7C7F-466B-85C6-C67F362DBFEC}.Debug|x86.Build.0 = Debug|Any CPU
+		{1971D1A3-7C7F-466B-85C6-C67F362DBFEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1971D1A3-7C7F-466B-85C6-C67F362DBFEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1971D1A3-7C7F-466B-85C6-C67F362DBFEC}.Release|ARM.ActiveCfg = Release|Any CPU
+		{1971D1A3-7C7F-466B-85C6-C67F362DBFEC}.Release|ARM.Build.0 = Release|Any CPU
+		{1971D1A3-7C7F-466B-85C6-C67F362DBFEC}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{1971D1A3-7C7F-466B-85C6-C67F362DBFEC}.Release|ARM64.Build.0 = Release|Any CPU
+		{1971D1A3-7C7F-466B-85C6-C67F362DBFEC}.Release|x64.ActiveCfg = Release|Any CPU
+		{1971D1A3-7C7F-466B-85C6-C67F362DBFEC}.Release|x64.Build.0 = Release|Any CPU
+		{1971D1A3-7C7F-466B-85C6-C67F362DBFEC}.Release|x86.ActiveCfg = Release|Any CPU
+		{1971D1A3-7C7F-466B-85C6-C67F362DBFEC}.Release|x86.Build.0 = Release|Any CPU
+		{BD9317EC-737B-4CF0-8ECC-C3B798F1C091}.Debug|Any CPU.ActiveCfg = Debug
+		{BD9317EC-737B-4CF0-8ECC-C3B798F1C091}.Debug|ARM.ActiveCfg = Debug
+		{BD9317EC-737B-4CF0-8ECC-C3B798F1C091}.Debug|ARM64.ActiveCfg = Debug
+		{BD9317EC-737B-4CF0-8ECC-C3B798F1C091}.Debug|x64.ActiveCfg = Debug
+		{BD9317EC-737B-4CF0-8ECC-C3B798F1C091}.Debug|x86.ActiveCfg = Debug
+		{BD9317EC-737B-4CF0-8ECC-C3B798F1C091}.Release|Any CPU.ActiveCfg = Release
+		{BD9317EC-737B-4CF0-8ECC-C3B798F1C091}.Release|ARM.ActiveCfg = Release
+		{BD9317EC-737B-4CF0-8ECC-C3B798F1C091}.Release|ARM64.ActiveCfg = Release
+		{BD9317EC-737B-4CF0-8ECC-C3B798F1C091}.Release|x64.ActiveCfg = Release
+		{BD9317EC-737B-4CF0-8ECC-C3B798F1C091}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E25D0F7-3A97-4516-9E5A-FE04BEBC054F}
+	EndGlobalSection
+EndGlobal

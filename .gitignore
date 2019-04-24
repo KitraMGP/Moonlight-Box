@@ -2,7 +2,6 @@ bin/
 obj/
 other_/
 .vs/
-*.sln
 MoonLight_Box.vbproj.user
 run/
 Installer/Debug.
