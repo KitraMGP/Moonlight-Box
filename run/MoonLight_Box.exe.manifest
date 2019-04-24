@@ -32,34 +32,34 @@
   <dependency>
     <dependentOS>
       <osVersionInfo>
-        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+        <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
       </osVersionInfo>
     </dependentOS>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MoonLight_Box.exe" size="1192416">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MoonLight_Box.exe" size="1191904">
       <assemblyIdentity name="MoonLight_Box" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>vvGjGTColJ2LTntVfiQHR1dj2n0=</dsig:DigestValue>
+        <dsig:DigestValue>SSHuC+3RreG3Xio/dYSEA2qNbF4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="MoonLight_Box.exe.config" size="183">
+  <file name="MoonLight_Box.exe.config" size="156">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>L7qGkMy/jF2CxamiJaXpM5NouL8=</dsig:DigestValue>
+      <dsig:DigestValue>L3I9DOWeEB/P2DpzjuMQmiwf8bM=</dsig:DigestValue>
     </hash>
   </file>
   <file name="resources\icon.ico" size="67646">
